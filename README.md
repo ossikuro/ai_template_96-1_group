@@ -31,3 +31,4 @@ var = я вызываю переменную
 
 -   [Доска задач](https://belporibet.kaiten.ru/space/492338)
 -   [Макет источник](<https://www.figma.com/design/hKqOPuXfXYoiC3up37VkCn/AI-Blog-Website-UI-Template---Dark-Theme-%7C-Produce-UI-(Community)?node-id=18-214&node-type=canvas&t=QINBsGvrJXzjRtJm-0>)
+-   [Обновленные куски](https://www.figma.com/design/elRFKEp0pxrQtcKFwgWaYF/Redesigned-AI-website?node-id=0-1&t=dPT1LBuQMPoFQRuN-1) (если не получается в фигме смотреть размеры, копируйте себе макет)
