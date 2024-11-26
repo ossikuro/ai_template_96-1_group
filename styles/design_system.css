@@ -1,34 +1,68 @@
 :root {
-    /* Цвета */
-    --White: #ffffff;
-    --Black: #000000;
-    --Yellow_55: #ffd11a;
-    --Yellow_60: #ffd633;
-    --Yellow_70: #ffe066;
-    --Yellow_80: #ffeb99;
-    --Yellow_90: #fff5cc;
-    --Yellow_95: #fffae5;
-    --Yellow_97: #fffcf0;
-    --Yellow_99: #fffefa;
-    --Dark_08: #141414;
-    --Dark_10: #1a1a1a;
-    --Dark_15: #262626;
-    --Dark_20: #333333;
-    --Dark_25: #404040;
-    --Dark_30: #4d4d4d;
-    --Dark_35: #595959;
-    --Dark_40: #666666;
-    --Grey_50: #7e7e81;
-    --Grey_60: #98989a;
-    --Grey_70: #b3b3b3;
-    --Grey_80: #cccccc;
-    --Grey_90: #e4e4e7;
-    --Grey_95: #f1f1f3;
-    --Grey_97: #f7f7f8;
-    --Grey_99: #fcfcfd;
+  /* Цвета */
+  --White: #ffffff;
+  --Black: #000000;
+  --Yellow_55: #ffd11a;
+  --Yellow_60: #ffd633;
+  --Yellow_70: #ffe066;
+  --Yellow_80: #ffeb99;
+  --Yellow_90: #fff5cc;
+  --Yellow_95: #fffae5;
+  --Yellow_97: #fffcf0;
+  --Yellow_99: #fffefa;
+  --Dark_08: #141414;
+  --Dark_10: #1a1a1a;
+  --Dark_15: #262626;
+  --Dark_20: #333333;
+  --Dark_25: #404040;
+  --Dark_30: #4d4d4d;
+  --Dark_35: #595959;
+  --Dark_40: #666666;
+  --Grey_50: #7e7e81;
+  --Grey_60: #98989a;
+  --Grey_70: #b3b3b3;
+  --Grey_80: #cccccc;
+  --Grey_90: #e4e4e7;
+  --Grey_95: #f1f1f3;
+  --Grey_97: #f7f7f8;
+  --Grey_99: #fcfcfd;
 }
 /* Стили шрифтов */
 /* Размеры отступов, паддингов */
 /* Ограничения ширин, шаблоны для @media */
 /* Кнопки и ссылки */
+
+.button {
+  text-transform: capitalize;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.yellow {
+  background-color: var(--Yellow_55);
+  color: var(--Dark_08);
+}
+
+.black {
+  background-color: var(--Dark_08);
+  color: var(--Grey_60);
+  border: 0.0625rem solid var(--Dark_15);
+}
+
+.active_header {
+  color: var(--White);
+  font-weight: 500;
+  background-color: var(--Dark_08);
+  border: 0.0625rem solid var(--Dark_20);
+}
+
+.active_body {
+  color: var(--White);
+  font-weight: 500;
+  background-color: var(--Dark_10);
+  border: 0.0625rem solid var(--Dark_15);
+}
+
 /* Контейнеры-карточки */
