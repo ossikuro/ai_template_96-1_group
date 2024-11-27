@@ -34,6 +34,29 @@ $Grey_97: #f7f7f8;
 $Grey_99: #fcfcfd;
 
 /* ----------- Стили шрифтов ----------- */
+
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("../fonts/KumbhSans-Regular.eot");
+    src: local("Kumbh Sans Regular"), local("KumbhSans-Regular"),
+      url("../fonts/KumbhSans-Regular.woff2") format("woff2"),
+      url("../fonts/KumbhSans-Regular.woff") format("woff"),
+      url("../fonts/KumbhSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.eot");
+    src: local("Inter Regular"), local("Inter-Regular"),
+      url("../fonts/Inter-Regular.woff2") format("woff2"),
+      url("../fonts/Inter-Regular.woff") format("woff"),
+      url("../fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 /* Заголовки, на макете шрифты Kumbh */
 
 @mixin title_Kumbh {
