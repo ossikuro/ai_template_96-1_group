@@ -3,16 +3,60 @@
 .future_tech_features_top {
   background-color: $Dark_10;
   height: 64.25rem;
-  border: 0.25rem solid $Grey_60;
+  border-top: 0.25rem solid $Grey_80;
+  border-bottom: 0.25rem solid $Grey_80;
 }
 
 .non-clickable {
   background-color: $Dark_20;
   padding: 1rem 2rem;
   color: $White;
+  width: 40.5rem;
+  border-radius: 1rem;
+  margin-top: 20rem;
+  box-sizing: border-box;
 }
 
 .future_tech_features_blog {
   height: 112rem;
   background-color: $Dark_15;
+  display: flex;
+}
+
+.future_tech_title {
+  font-size: 11rem;
+  color: $White;
+  font-family: 'Kumbh Sans';
+  font-weight: 500;
+}
+
+.left_part_blog {
+  border-right: 0.25rem solid $Grey_80;
+  width: 118rem;
+  height: 112rem;
+}
+
+.right_part_blog {
+  position: relative;
+  width: 201rem;
+}
+
+.right_part_blog_card {
+ display: flex;
+ justify-content: space-between;
+}
+
+.right_part_blog_card_flex {
+  margin: 15rem 5rem 5rem 15rem;
+}
+
+.left_part_blog_card_flex {
+margin: 15rem 0 5rem 0;
+}
+
+.blog_card_title {
+  font-size: 5rem;
+  font-family: 'Inter';
+  font-weight: 500;
+  color: $White;
 }

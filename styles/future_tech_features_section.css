@@ -29,7 +29,7 @@
 /* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 .container {
-  max-width: 300rem;
+  max-width: 320rem;
   margin: 0 auto;
 }
 
@@ -71,16 +71,60 @@
 .future_tech_features_top {
   background-color: #1a1a1a;
   height: 64.25rem;
-  border: 0.25rem solid #98989a;
+  border-top: 0.25rem solid #cccccc;
+  border-bottom: 0.25rem solid #cccccc;
 }
 
 .non-clickable {
   background-color: #333333;
   padding: 1rem 2rem;
   color: #ffffff;
+  width: 40.5rem;
+  border-radius: 1rem;
+  margin-top: 20rem;
+  box-sizing: border-box;
 }
 
 .future_tech_features_blog {
   height: 112rem;
   background-color: #262626;
+  display: flex;
+}
+
+.future_tech_title {
+  font-size: 11rem;
+  color: #ffffff;
+  font-family: "Kumbh Sans";
+  font-weight: 500;
+}
+
+.left_part_blog {
+  border-right: 0.25rem solid #cccccc;
+  width: 118rem;
+  height: 112rem;
+}
+
+.right_part_blog {
+  position: relative;
+  width: 201rem;
+}
+
+.right_part_blog_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_part_blog_card_flex {
+  margin: 15rem 5rem 5rem 15rem;
+}
+
+.left_part_blog_card_flex {
+  margin: 15rem 0 5rem 0;
+}
+
+.blog_card_title {
+  font-size: 5rem;
+  font-family: "Inter";
+  font-weight: 500;
+  color: #ffffff;
 }/*# sourceMappingURL=future_tech_features_section.css.map */
