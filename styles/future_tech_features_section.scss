@@ -18,7 +18,6 @@
 }
 
 .future_tech_features_blog {
-  height: 112rem;
   background-color: $Dark_15;
   display: flex;
 }
@@ -33,25 +32,39 @@
 .left_part_blog {
   border-right: 0.25rem solid $Grey_80;
   width: 118rem;
-  height: 112rem;
 }
 
 .right_part_blog {
   position: relative;
-  width: 201rem;
+  // width: 201rem;
+  // height: 112rem;
+  padding: 15rem 10rem 10rem 15rem;
 }
 
 .right_part_blog_card {
  display: flex;
  justify-content: space-between;
+ align-items: center;
+//  height: 38rem;
 }
 
 .right_part_blog_card_flex {
-  margin: 15rem 5rem 5rem 15rem;
+  margin: 0 5rem 5rem 0;
+  width: 90rem;
+  background-color: $Dark_20;
+  color: $White;
+  border-radius: 1rem;
+  height: 38rem;
+  
 }
 
 .left_part_blog_card_flex {
-margin: 15rem 0 5rem 0;
+  margin: 0 5rem 5rem 0;
+width: 90rem;background-color: $Dark_20;
+color: $White;
+border-radius: 1rem;
+height: 38rem;
+
 }
 
 .blog_card_title {
