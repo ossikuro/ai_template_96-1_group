@@ -1,1 +1,90 @@
 @import 'design_system';
+
+.hero_section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* сетка из статистики и главного блока */
+.statistics {
+    display: grid;
+    grid-template-columns: 1fr minmax(101rem, 189rem) 131rem 1fr;
+    grid-template-rows: repeat(2, auto);
+    border-bottom: $Border;
+}
+
+/* ячейка с заголовком страницы */
+.grid_empty_left_top {
+    min-width: 12rem;
+    border-bottom: $Border;
+}
+
+.statistics_greeting {
+    max-width: calc(344rem - 131rem - 12rem);
+    padding: 25rem 10rem 25rem 0;
+    @include page_subtitle_L;
+    color: $Dark_40;
+    border-right: $Border;
+    border-bottom: $Border;
+}
+
+.greeting_title {
+    margin-top: 5rem;
+    color: $White;
+    @include page_title_L;
+}
+
+.greeting_description {
+    margin-top: 3.5rem;
+    color: $Grey_50;
+    @include txt_body_16;
+}
+
+/* ячейки с цифрами */
+.grid_empty_left_bottom {
+    min-width: 12rem;
+}
+
+.statistics_numbers {
+    display: flex;
+    width: 100%;
+    gap: 10rem;
+}
+
+.statistic_number {
+    width: 100%;
+    padding: 12.5rem 0;
+    color: $White;
+    @include bold_numbers_L;
+    border-right: $Border;
+}
+
+.colortext {
+    color: $Yellow_55;
+}
+
+/* ячейка с аватарками */
+.statistics_resources {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+.grid_empty_right {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    min-width: 12rem;
+}
+
+.statistics_resources::before {
+    content: '';
+    height: 100%;
+    display: block;
+    background-image: url(../assets/img/rays.png);
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-size: 121rem;
+}
+
+.benefits {
+    display: flex;
+}

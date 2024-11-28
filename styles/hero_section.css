@@ -29,7 +29,8 @@
 /* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 .container {
-  max-width: 320rem;
+  max-width: 344rem;
+  padding: 0 12rem;
   margin: 0 auto;
 }
 
@@ -67,4 +68,110 @@
   border: 0.0625rem solid #262626;
 }
 
-/* ----------- Контейнеры-карточки ----------- *//*# sourceMappingURL=hero_section.css.map */
+/* ----------- Контейнеры-карточки ----------- */
+body {
+  background-color: #1a1a1a;
+}
+
+.hero_section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* сетка из статистики и главного блока */
+.statistics {
+  display: grid;
+  grid-template-columns: 1fr minmax(101rem, 189rem) 131rem 1fr;
+  grid-template-rows: repeat(2, auto);
+  border-bottom: 0.25rem #262626 solid;
+}
+
+/* ячейка с заголовком страницы */
+.grid_empty_left_top {
+  min-width: 12rem;
+  border-bottom: 0.25rem #262626 solid;
+}
+
+.statistics_greeting {
+  max-width: 201rem;
+  padding: 25rem 10rem 25rem 0;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Kumbh Sans", serif;
+  font-weight: 500;
+  font-size: 5.5rem;
+  line-height: 120%;
+  color: #666666;
+  border-right: 0.25rem #262626 solid;
+  border-bottom: 0.25rem #262626 solid;
+}
+
+.greeting_title {
+  margin-top: 5rem;
+  color: #ffffff;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Kumbh Sans", serif;
+  font-weight: 500;
+  font-size: 13.75rem;
+  line-height: 120%;
+}
+
+.greeting_description {
+  margin-top: 3.5rem;
+  color: #7e7e81;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 4rem;
+}
+
+/* ячейки с цифрами */
+.grid_empty_left_bottom {
+  min-width: 12rem;
+}
+
+.statistics_numbers {
+  display: flex;
+  width: 100%;
+  gap: 10rem;
+}
+
+.statistic_number {
+  width: 100%;
+  padding: 12.5rem 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 7.5rem;
+  line-height: 150%;
+  border-right: 0.25rem #262626 solid;
+}
+
+.colortext {
+  color: #ffd11a;
+}
+
+/* ячейка с аватарками */
+.statistics_resources {
+  grid-column: 3;
+  grid-row: 1/3;
+}
+
+.grid_empty_right {
+  grid-column: 4;
+  grid-row: 1/3;
+  min-width: 12rem;
+}
+
+.statistics_resources::before {
+  content: "";
+  height: 100%;
+  display: block;
+  background-image: url(../assets/img/rays.png);
+  background-blend-mode: color-dodge;
+  background-repeat: no-repeat;
+  background-size: 121rem;
+}
+
+.benefits {
+  display: flex;
+}/*# sourceMappingURL=hero_section.css.map */
