@@ -140,6 +140,7 @@
 }
 
 .benefits_position {
+    @include container;
     display: flex;
 }
 

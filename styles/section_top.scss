@@ -1,0 +1,41 @@
+@import 'design_system';
+
+.section_top {
+    background-color: $Dark_10;
+    border-bottom: $Border;
+    padding: 20rem 0;
+}
+
+.section_top_content {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    gap: 50rem;
+}
+
+.section_top_content {
+}
+
+.text_top_content {
+}
+
+.top_badge {
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    @include txt_title_16;
+    background-color: $Dark_20;
+    color: $White;
+    margin-bottom: 2.5rem;
+}
+
+.top_title {
+    @include section_title_L;
+    color: $White;
+}
+
+.text_top_button {
+    @include btn_size_48;
+    @include btn_black;
+    width: fit-content;
+}

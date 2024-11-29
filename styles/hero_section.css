@@ -27,11 +27,6 @@
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 320rem;
-  margin: 0 auto;
-}
-
 /* ----------- Кнопки и ссылки ----------- */
 /* разные настройки размеров кнопок */
 /* разные цвета и стили кнопок */
@@ -233,6 +228,7 @@ body {
   font-weight: 500;
   line-height: 150%;
   font-size: 3.5rem;
+  white-space: nowrap;
   background-color: #141414;
   color: #98989a;
   border: 0.25rem #262626 solid;
@@ -276,6 +272,9 @@ body {
 }
 
 .benefits_position {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -335,9 +334,9 @@ body {
   color: #141414;
   cursor: pointer;
 }
-.benefit_button .icon {
-  width: 5rem;
-  height: 5rem;
+.benefit_button svg {
+  width: 100%;
+  height: 100%;
 }
 .benefit_button svg {
   color: #141414;

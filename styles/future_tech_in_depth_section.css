@@ -27,6 +27,11 @@
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
+.container {
+  max-width: 320rem;
+  margin: 0 auto;
+}
+
 /* ----------- Кнопки и ссылки ----------- */
 /* разные настройки размеров кнопок */
 /* разные цвета и стили кнопок */
@@ -66,4 +71,4 @@
 /* ----------- Контейнеры-карточки ----------- */
 body {
   background-color: #141414;
-}/*# sourceMappingURL=design_system.css.map */
+}/*# sourceMappingURL=future_tech_in_depth_section.css.map */
