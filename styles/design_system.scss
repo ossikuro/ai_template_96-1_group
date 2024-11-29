@@ -177,7 +177,6 @@ $Border: 0.25rem $Dark_15 solid;
     font-size: 3.5rem;
 }
 
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 
 .container {
@@ -186,7 +185,7 @@ $Border: 0.25rem $Dark_15 solid;
 }
 
 /* ----------- Кнопки и ссылки ----------- */
-
+/* разные настройки размеров кнопок */
 @mixin btn_size_48 {
     box-sizing: border-box;
     height: 12rem;
@@ -201,6 +200,19 @@ $Border: 0.25rem $Dark_15 solid;
     }
 }
 
+@mixin btn_circle {
+    box-sizing: border-box;
+    height: 11rem;
+    width: 11rem;
+    padding: 3rem;
+    border-radius: 6rem;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+/* разные цвета и стили кнопок */
 @mixin btn_black {
     background-color: $Dark_08;
     color: $Grey_60;
@@ -227,110 +239,22 @@ $Border: 0.25rem $Dark_15 solid;
     }
 }
 
-.button {
-    @include txt_body_14;
-    text-transform: capitalize;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.yellow {
+@mixin btn_yellow {
     background-color: $Yellow_55;
     color: $Dark_08;
+    cursor: pointer;
+    svg {
+        color: $Dark_08;
+    }
+    &:hover {
+        background-color: $Yellow_70;
+        color: $Grey_80;
+    }
+    &:active {
+        background-color: $Yellow_60;
+        color: $Grey_70;
+    }
 }
-
-.black {
-    background-color: $Dark_08;
-    color: $Grey_60;
-    border: 0.0625rem solid $Dark_15;
-}
-
-.active_header {
-    color: $White;
-    font-weight: 500;
-    background-color: $Dark_08;
-    border: 0.0625rem solid $Dark_20;
-}
-
-.active_body {
-    color: $White;
-    font-weight: 500;
-    background-color: $Dark_10;
-    border: 0.0625rem solid $Dark_15;
-}
-
-/* ----------- Контейнеры-карточки ----------- */
-
-@mixin bold_numbers_S {
-    font-weight: 600;
-    font-size: 6rem;
-    line-height: 150%;
-}
-
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-
-@mixin txt_title {
-    /* служебный миксин, его использовать не надо */
-    font-family: 'Inter', serif;
-    font-weight: 500;
-    line-height: 150%;
-}
-
-@mixin txt_title_22 {
-    @include txt_title;
-    font-size: 5.5rem;
-}
-
-@mixin txt_title_20 {
-    @include txt_title;
-    font-size: 5rem;
-}
-
-@mixin txt_title_18 {
-    @include txt_title;
-    font-size: 4.5rem;
-}
-
-@mixin txt_title_16 {
-    @include txt_title;
-    font-size: 4rem;
-}
-
-/* на макете шрифт Inter Regular */
-
-@mixin txt_body {
-    /* служебный миксин, его использовать не надо */
-    font-family: 'Inter', serif;
-    font-weight: 400;
-    line-height: 150%;
-}
-
-@mixin txt_body_16 {
-    @include txt_body;
-    font-size: 4rem;
-}
-
-@mixin txt_body_14 {
-    @include txt_body;
-    font-size: 3.5rem;
-}
-
-/* ----------- Размеры отступов, паддингов ----------- */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-
-@mixin section_container {
-    max-width: 344rem;
-    padding: 0 12rem;
-    margin: 0 auto;
-}
-
-.container {
-    max-width: 344rem;
-    padding: 0 12rem;
-    margin: 0 auto;
-}
-
-/* ----------- Кнопки и ссылки ----------- */
 
 .button {
     text-transform: capitalize;

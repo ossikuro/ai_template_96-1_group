@@ -20,7 +20,6 @@
 }
 
 .statistics_greeting {
-    max-width: calc(344rem - 131rem - 12rem);
     padding: 25rem 10rem 25rem 0;
     @include page_subtitle_L;
     color: $Dark_40;
@@ -135,6 +134,59 @@
     min-width: 12rem;
 }
 
+/* нижний блок из 3-х разделов */
 .benefits {
+    border-bottom: $Border;
+}
+
+.benefits_position {
     display: flex;
+}
+
+.benefit_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5rem;
+    padding: 10rem 12.5rem;
+    border-right: $Border;
+    &:first-child {
+        padding: 10rem 12.5rem 10rem 0;
+    }
+    &:last-child {
+        padding: 10rem 0 10rem 12.5rem;
+        border: none;
+    }
+}
+
+.benefit_image {
+    width: 10rem;
+}
+
+.benefit_content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 3.5rem;
+}
+
+.benefit_content_text {
+    @include txt_title_18;
+    color: $White;
+}
+
+.benefit_content_description {
+    margin-top: 0.5rem;
+    @include txt_body_16;
+    color: $Grey_50;
+}
+
+.benefit_button {
+    @include btn_circle;
+    @include btn_yellow;
+}
+
+.benefit_description {
+    color: $Grey_60;
+    @include txt_title_16;
 }

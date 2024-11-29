@@ -26,7 +26,6 @@
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 .container {
   max-width: 320rem;
@@ -34,54 +33,8 @@
 }
 
 /* ----------- Кнопки и ссылки ----------- */
-.button {
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 500;
-  line-height: 150%;
-  font-size: 3.5rem;
-  text-transform: capitalize;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.yellow {
-  background-color: #ffd11a;
-  color: #141414;
-}
-
-.black {
-  background-color: #141414;
-  color: #98989a;
-  border: 0.0625rem solid #262626;
-}
-
-.active_header {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #141414;
-  border: 0.0625rem solid #333333;
-}
-
-.active_body {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  border: 0.0625rem solid #262626;
-}
-
-/* ----------- Контейнеры-карточки ----------- */
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-/* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
-/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
 .button {
   text-transform: capitalize;
   font-family: "Inter";

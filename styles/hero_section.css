@@ -26,7 +26,6 @@
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 .container {
   max-width: 320rem;
@@ -34,54 +33,8 @@
 }
 
 /* ----------- Кнопки и ссылки ----------- */
-.button {
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 500;
-  line-height: 150%;
-  font-size: 3.5rem;
-  text-transform: capitalize;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.yellow {
-  background-color: #ffd11a;
-  color: #141414;
-}
-
-.black {
-  background-color: #141414;
-  color: #98989a;
-  border: 0.0625rem solid #262626;
-}
-
-.active_header {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #141414;
-  border: 0.0625rem solid #333333;
-}
-
-.active_body {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  border: 0.0625rem solid #262626;
-}
-
-/* ----------- Контейнеры-карточки ----------- */
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-/* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
-/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
 .button {
   text-transform: capitalize;
   font-family: "Inter";
@@ -140,7 +93,6 @@ body {
 }
 
 .statistics_greeting {
-  max-width: 201rem;
   padding: 25rem 10rem 25rem 0;
   /* служебный миксин, его использовать не надо */
   font-family: "Kumbh Sans", serif;
@@ -167,7 +119,7 @@ body {
   color: #7e7e81;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   font-size: 4rem;
 }
@@ -201,7 +153,7 @@ body {
   margin-top: 0.5rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   font-size: 3.5rem;
   color: #98989a;
@@ -263,7 +215,7 @@ body {
   margin-top: 1.5rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   font-size: 4rem;
   color: #98989a;
@@ -278,7 +230,7 @@ body {
   border-radius: 2rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   font-size: 3.5rem;
   background-color: #141414;
@@ -318,6 +270,92 @@ body {
   min-width: 12rem;
 }
 
+/* нижний блок из 3-х разделов */
 .benefits {
+  border-bottom: 0.25rem #262626 solid;
+}
+
+.benefits_position {
   display: flex;
+}
+
+.benefit_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5rem;
+  padding: 10rem 12.5rem;
+  border-right: 0.25rem #262626 solid;
+}
+.benefit_container:first-child {
+  padding: 10rem 12.5rem 10rem 0;
+}
+.benefit_container:last-child {
+  padding: 10rem 0 10rem 12.5rem;
+  border: none;
+}
+
+.benefit_image {
+  width: 10rem;
+}
+
+.benefit_content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 3.5rem;
+}
+
+.benefit_content_text {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.benefit_content_description {
+  margin-top: 0.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #7e7e81;
+}
+
+.benefit_button {
+  box-sizing: border-box;
+  height: 11rem;
+  width: 11rem;
+  padding: 3rem;
+  border-radius: 6rem;
+  background-color: #ffd11a;
+  color: #141414;
+  cursor: pointer;
+}
+.benefit_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.benefit_button svg {
+  color: #141414;
+}
+.benefit_button:hover {
+  background-color: #ffe066;
+  color: #cccccc;
+}
+.benefit_button:active {
+  background-color: #ffd633;
+  color: #b3b3b3;
+}
+
+.benefit_description {
+  color: #98989a;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
 }/*# sourceMappingURL=hero_section.css.map */
