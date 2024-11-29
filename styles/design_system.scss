@@ -33,6 +33,8 @@ $Grey_95: #f1f1f3;
 $Grey_97: #f7f7f8;
 $Grey_99: #fcfcfd;
 
+$Border: 0.25rem $Dark_15 solid;
+
 /* ----------- Стили шрифтов ----------- */
 
 @font-face {
@@ -185,10 +187,49 @@ $Grey_99: #fcfcfd;
 
 /* ----------- Кнопки и ссылки ----------- */
 
+@mixin btn_size_48 {
+    box-sizing: border-box;
+    height: 12rem;
+    padding: 3.5rem 5rem;
+    display: flex;
+    gap: 1rem;
+    border-radius: 2rem;
+    @include txt_body_14;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@mixin btn_black {
+    background-color: $Dark_08;
+    color: $Grey_60;
+    border: $Border;
+    cursor: pointer;
+    svg {
+        color: $Yellow_55;
+    }
+    &:hover {
+        background-color: $Dark_15;
+        color: $Grey_80;
+        border: 0.25rem $Dark_25 solid;
+        svg {
+            color: $Yellow_70;
+        }
+    }
+    &:active {
+        background-color: $Dark_10;
+        color: $Grey_70;
+        border: 0.25rem $Dark_20 solid;
+        svg {
+            color: $Yellow_60;
+        }
+    }
+}
+
 .button {
+    @include txt_body_14;
     text-transform: capitalize;
-    font-family: 'Inter';
-    font-size: 0.875rem;
     text-align: center;
     box-sizing: border-box;
 }
@@ -326,5 +367,5 @@ $Grey_99: #fcfcfd;
 
 /* ----------- Контейнеры-карточки ----------- */
 body {
-    background-color: $Dark_10;
+    background-color: $Dark_08;
 }

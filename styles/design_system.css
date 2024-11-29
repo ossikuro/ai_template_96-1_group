@@ -35,9 +35,12 @@
 
 /* ----------- Кнопки и ссылки ----------- */
 .button {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
   text-transform: capitalize;
-  font-family: "Inter";
-  font-size: 0.875rem;
   text-align: center;
   box-sizing: border-box;
 }
@@ -114,5 +117,5 @@
 
 /* ----------- Контейнеры-карточки ----------- */
 body {
-  background-color: #1a1a1a;
+  background-color: #141414;
 }/*# sourceMappingURL=design_system.css.map */
