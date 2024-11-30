@@ -249,17 +249,150 @@
                             Explore FutureTech's In-Depth Blog Posts
                         </div>
                     </div>
-                    <div class="text_top_button">
+                    <a class="text_top_button">
                         View All Blogs
                         <svg class="icon">
                             <use
                                 href="./assets/icons/Icon_arrow.svg#arrow"
                             ></use>
                         </svg>
-                    </div>
+                    </a>
                 </div>
             </article>
-            <article></article>
+            <article class="section">
+                <div class="tabs_content">
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="true"
+                        aria-controls="tabpanel_All"
+                        name="blog_tabs"
+                        id="tab_btn_all"
+                    >
+                        All
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Technology"
+                        name="blog_tabs"
+                        id="tab_btn_technology"
+                    >
+                        Technology
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Politics"
+                        name="blog_tabs"
+                        id="tab_btn_politics"
+                    >
+                        Politics
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Health"
+                        name="blog_tabs"
+                        id="tab_btn_health"
+                    >
+                        Health
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Enviroment"
+                        name="blog_tabs"
+                        id="tab_btn_enviroment"
+                    >
+                        Environment
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Sports"
+                        name="blog_tabs"
+                        id="tab_btn_sports"
+                    >
+                        Sports
+                    </button>
+                </div>
+            </article>
+            <div id="tabpanel_All">
+                <article class="section">
+                    <div class="container">
+                        <div class="blogpost_wrapper">
+                            <div class="blogpost_author">
+                                <img
+                                    src="./assets/img/avatarts/avatar_women_stripes.png"
+                                    alt="баба в полоску"
+                                    class="blogpost_avatar"
+                                />
+                                <div class="author_name">
+                                    Sarah Ethicist
+                                    <div class="blogpost_theme">AI Ethics</div>
+                                </div>
+                            </div>
+                            <div class="blogpost_preview">
+                                <div class="blogpost_date">
+                                    November 5, 2023
+                                </div>
+                                <div class="blogpost_name">
+                                    The Ethical Dilemmas of AI
+                                    <div class="blogpost_description">
+                                        A deep dive into ethical challenges
+                                        posed by AI, including bias, privacy,
+                                        and transparency.
+                                    </div>
+                                </div>
+                                <div class="blogpost_social_buttons">
+                                    <button
+                                        class="favorites_btn"
+                                        role="checkbox"
+                                        onclick="this.classList.toggle('active')"
+                                    >
+                                        <svg class="icon">
+                                            <use
+                                                href="./assets/icons/Icon_favorites.svg#favorites"
+                                            ></use>
+                                        </svg>
+                                        24.5k
+                                    </button>
+                                    <button class="chat_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="./assets/icons/Icon_chat.svg#chat"
+                                            ></use>
+                                        </svg>
+                                        72
+                                    </button>
+                                    <button class="share_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="./assets/icons/Icon_share.svg#share"
+                                            ></use>
+                                        </svg>
+                                        18
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="post_button" href="">
+                                View Blog
+                                <svg class="icon">
+                                    <use
+                                        href="./assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </body>
 </html>
