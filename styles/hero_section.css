@@ -22,10 +22,22 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../fonts/Inter-Medium.eot");
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Заголовки, на макете шрифты Kumbh */
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
+/* ----------- Ограничения ширин, шаблоны для @media ----------- */
+/* ----------- Контейнеры-карточки ----------- */
+/* Мелкие заголовки, на макете шрифт Inter Medium */
+/* на макете шрифт Inter Regular */
+/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 /* ----------- Кнопки и ссылки ----------- */
 /* разные настройки размеров кнопок */
@@ -114,7 +126,7 @@ body {
   color: #7e7e81;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   font-size: 4rem;
 }
@@ -148,7 +160,7 @@ body {
   margin-top: 0.5rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   font-size: 3.5rem;
   color: #98989a;
@@ -210,7 +222,7 @@ body {
   margin-top: 1.5rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   font-size: 4rem;
   color: #98989a;
@@ -225,7 +237,7 @@ body {
   border-radius: 2rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   font-size: 3.5rem;
   white-space: nowrap;
@@ -318,7 +330,7 @@ body {
   margin-top: 0.5rem;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   font-size: 4rem;
   color: #7e7e81;
