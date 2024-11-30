@@ -27,11 +27,6 @@
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 320rem;
-  margin: 0 auto;
-}
-
 /* ----------- Кнопки и ссылки ----------- */
 /* разные настройки размеров кнопок */
 /* разные цвета и стили кнопок */
@@ -71,4 +66,205 @@
 /* ----------- Контейнеры-карточки ----------- */
 body {
   background-color: #141414;
+}
+
+/* -------- общее --------*/
+.section {
+  border-bottom: 0.25rem #262626 solid;
+}
+
+/* -------- секция с кнопками-табами --------*/
+.tabs_content {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 3.5rem;
+  padding: 10rem 0;
+}
+
+.tabs_button {
+  box-sizing: border-box;
+  height: 17rem;
+  padding: 5rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  width: 100%;
+}
+.tabs_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.tabs_button svg {
+  color: #ffd11a;
+}
+.tabs_button:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.tabs_button:hover svg {
+  color: #ffe066;
+}
+.tabs_button:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.tabs_button:active svg {
+  color: #ffd633;
+}
+
+.tabs_button[aria-selected=true] {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+  cursor: pointer;
+}
+.tabs_button[aria-selected=true] svg {
+  color: #ffd633;
+}
+.tabs_button[aria-selected=true]:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.tabs_button[aria-selected=true]:hover svg {
+  color: #ffe066;
+}
+
+/* -------- одна статейка -------- */
+.blogpost_wrapper {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12.5rem;
+  padding: 15rem 0;
+}
+
+/* автор */
+.blogpost_author {
+  display: flex;
+  width: 76rem;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.blogpost_avatar {
+  background-color: #262626;
+  width: 15rem;
+  border-radius: 7.5rem;
+}
+
+.author_name {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.blogpost_theme {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
+  color: #98989a;
+}
+
+/* тема */
+.blogpost_preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8rem;
+}
+
+.blogpost_date {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4.5rem;
+  color: #98989a;
+}
+
+.blogpost_name {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 5.5rem;
+  color: #ffffff;
+}
+
+.blogpost_description {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+/* кнопка-ссылка */
+.post_button {
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.post_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.post_button svg {
+  color: #ffd11a;
+}
+.post_button:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.post_button:hover svg {
+  color: #ffe066;
+}
+.post_button:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.post_button:active svg {
+  color: #ffd633;
 }/*# sourceMappingURL=future_tech_in_depth_section.css.map */
