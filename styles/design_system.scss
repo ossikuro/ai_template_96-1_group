@@ -267,6 +267,23 @@ $Border: 0.25rem $Dark_15 solid;
     }
 }
 
+@mixin btn_size_68 {
+    box-sizing: border-box;
+    height: 17rem;
+    padding: 5rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    @include txt_body_14;
+    white-space: nowrap;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
 @mixin btn_circle {
     box-sizing: border-box;
     height: 11rem;

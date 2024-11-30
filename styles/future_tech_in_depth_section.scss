@@ -1,1 +1,101 @@
 @import 'design_system';
+/* -------- общее --------*/
+.section {
+    border-bottom: $Border;
+}
+
+/* -------- секция с кнопками-табами --------*/
+.tabs_content {
+    @include container;
+    display: flex;
+    gap: 3.5rem;
+    padding: 10rem 0;
+}
+
+.tabs_button {
+    @include btn_size_68;
+    @include btn_black;
+    width: 100%;
+}
+
+.tabs_button[aria-selected='true'] {
+    background-color: $Dark_10;
+    color: $Grey_70;
+    border: 0.25rem $Dark_20 solid;
+    cursor: pointer;
+    svg {
+        color: $Yellow_60;
+    }
+    &:hover {
+        background-color: $Dark_15;
+        color: $Grey_80;
+        border: 0.25rem $Dark_25 solid;
+        svg {
+            color: $Yellow_70;
+        }
+    }
+}
+
+/* -------- одна статейка -------- */
+
+.blogpost_wrapper {
+    @include container;
+    display: flex;
+    align-items: flex-start;
+    gap: 12.5rem;
+    padding: 15rem 0;
+}
+
+/* автор */
+
+.blogpost_author {
+    display: flex;
+    width: 76rem;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.blogpost_avatar {
+    background-color: $Dark_15;
+    width: 15rem;
+    border-radius: 7.5rem;
+}
+.author_name {
+    @include txt_title_18;
+    color: $White;
+}
+
+.blogpost_theme {
+    @include txt_body_14;
+    color: $Grey_60;
+}
+
+/* тема */
+.blogpost_preview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8rem;
+}
+
+.blogpost_date {
+    @include txt_title_18;
+    color: $Grey_60;
+}
+
+.blogpost_name {
+    @include txt_title_22;
+    color: $White;
+}
+
+.blogpost_description {
+    @include txt_body_16;
+    color: $Grey_60;
+}
+
+/* кнопка-ссылка */
+.post_button {
+    @include btn_size_48;
+    @include btn_black;
+    width: fit-content;
+}
