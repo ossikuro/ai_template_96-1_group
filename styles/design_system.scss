@@ -307,6 +307,23 @@ $Border: 0.25rem $Dark_15 solid;
     }
 }
 
+@mixin btn_size_32 {
+    box-sizing: border-box;
+    height: 8rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 3rem;
+    @include txt_body_14;
+    border-radius: 4rem;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
 /* разные цвета и стили кнопок */
 @mixin btn_black {
     background-color: $Dark_08;
@@ -348,6 +365,35 @@ $Border: 0.25rem $Dark_15 solid;
     &:active {
         background-color: $Yellow_60;
         color: $Grey_70;
+    }
+}
+
+@mixin btn_grey {
+    background-color: $Dark_10;
+    color: $Grey_60;
+    border: $Border;
+    cursor: pointer;
+    svg {
+        color: transparent;
+        stroke: $Dark_40;
+    }
+    &:hover {
+        background-color: $Dark_20;
+        color: $Grey_80;
+        border: 0.25rem $Dark_30 solid;
+        svg {
+            color: transparent;
+            border-color: $Grey_60;
+        }
+    }
+    &:active {
+        background-color: $Dark_15;
+        color: $Grey_70;
+        border: 0.25rem $Dark_25 solid;
+        svg {
+            color: transparent;
+            border-color: $Grey_50;
+        }
     }
 }
 

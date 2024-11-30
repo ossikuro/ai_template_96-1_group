@@ -92,7 +92,7 @@ body {
   margin: 0 auto;
   display: flex;
   gap: 3.5rem;
-  padding: 10rem 0;
+  padding: 10rem 12rem;
 }
 
 .tabs_button {
@@ -166,7 +166,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12.5rem;
-  padding: 15rem 0;
+  padding: 15rem 12rem;
 }
 
 /* автор */
@@ -234,6 +234,114 @@ body {
   line-height: 150%;
   font-size: 4rem;
   color: #98989a;
+}
+
+.chat_btn,
+.share_btn {
+  background-color: #1a1a1a;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 8rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  border-radius: 4rem;
+  width: fit-content;
+}
+.chat_btn svg,
+.share_btn svg {
+  color: transparent;
+  stroke: #666666;
+}
+.chat_btn:hover,
+.share_btn:hover {
+  background-color: #333333;
+  color: #cccccc;
+  border: 0.25rem #4d4d4d solid;
+}
+.chat_btn:hover svg,
+.share_btn:hover svg {
+  color: transparent;
+  border-color: #98989a;
+}
+.chat_btn:active,
+.share_btn:active {
+  background-color: #262626;
+  color: #b3b3b3;
+  border: 0.25rem #404040 solid;
+}
+.chat_btn:active svg,
+.share_btn:active svg {
+  color: transparent;
+  border-color: #7e7e81;
+}
+.chat_btn .icon,
+.share_btn .icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.favorites_btn[type=checkbox] {
+  background-color: #1a1a1a;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 8rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  border-radius: 4rem;
+  width: fit-content;
+}
+.favorites_btn[type=checkbox] svg {
+  color: transparent;
+  stroke: #666666;
+}
+.favorites_btn[type=checkbox]:hover {
+  background-color: #333333;
+  color: #cccccc;
+  border: 0.25rem #4d4d4d solid;
+}
+.favorites_btn[type=checkbox]:hover svg {
+  color: transparent;
+  border-color: #98989a;
+}
+.favorites_btn[type=checkbox]:active {
+  background-color: #262626;
+  color: #b3b3b3;
+  border: 0.25rem #404040 solid;
+}
+.favorites_btn[type=checkbox]:active svg {
+  color: transparent;
+  border-color: #7e7e81;
+}
+.favorites_btn[type=checkbox] .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.favorites_btn[type=checkbox].active svg {
+  fill: #ff5500;
 }
 
 /* кнопка-ссылка */
