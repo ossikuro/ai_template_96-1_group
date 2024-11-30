@@ -178,46 +178,6 @@ $Grey_99: #fcfcfd;
 /* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 
-.container {
-    max-width: 320rem;
-    margin: 0 auto;
-}
-
-/* ----------- Кнопки и ссылки ----------- */
-
-.button {
-    text-transform: capitalize;
-    font-family: 'Inter';
-    font-size: 0.875rem;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.yellow {
-    background-color: $Yellow_55;
-    color: $Dark_08;
-}
-
-.black {
-    background-color: $Dark_08;
-    color: $Grey_60;
-    border: 0.0625rem solid $Dark_15;
-}
-
-.active_header {
-    color: $White;
-    font-weight: 500;
-    background-color: $Dark_08;
-    border: 0.0625rem solid $Dark_20;
-}
-
-.active_body {
-    color: $White;
-    font-weight: 500;
-    background-color: $Dark_10;
-    border: 0.0625rem solid $Dark_15;
-}
-
 /* ----------- Контейнеры-карточки ----------- */
 
 @mixin bold_numbers_S {
