@@ -26,15 +26,10 @@
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
 /* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
 .button {
   text-transform: capitalize;
   font-family: "Inter";
@@ -70,7 +65,7 @@
 
 /* ----------- Контейнеры-карточки ----------- */
 body {
-  background-color: #1a1a1a;
+  background-color: #141414;
 }
 
 .hero_section {
@@ -81,7 +76,7 @@ body {
 /* сетка из статистики и главного блока */
 .statistics {
   display: grid;
-  grid-template-columns: 1fr minmax(101rem, 189rem) 131rem 1fr;
+  grid-template-columns: 1fr minmax(101rem, 213rem) 131rem 1fr;
   grid-template-rows: repeat(2, auto);
   border-bottom: 0.25rem #262626 solid;
 }
@@ -93,7 +88,6 @@ body {
 }
 
 .statistics_greeting {
-  max-width: 201rem;
   padding: 25rem 10rem 25rem 0;
   /* служебный миксин, его использовать не надо */
   font-family: "Kumbh Sans", serif;
@@ -120,7 +114,7 @@ body {
   color: #7e7e81;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   font-size: 4rem;
 }
@@ -150,10 +144,120 @@ body {
   color: #ffd11a;
 }
 
+.numbers_explain {
+  margin-top: 0.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
+  color: #98989a;
+}
+
 /* ячейка с аватарками */
 .statistics_resources {
   grid-column: 3;
   grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 5rem;
+  padding: 0 0 12.5rem 12.5rem;
+  background-image: url(../assets/img/rays.png);
+  background-blend-mode: color-dodge;
+  background-repeat: no-repeat;
+  background-size: 121rem;
+}
+
+.resources_content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.resources_avatars_wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 2rem;
+  border-radius: 8.5rem;
+  background-color: #1a1a1a;
+  border: 0.25rem #262626 solid;
+}
+
+.avatar_frame {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-left: -3.5rem;
+  border-radius: 6.5rem;
+  background-color: #262626;
+  border: 0.25rem #666666 solid;
+}
+.avatar_frame:first-child {
+  margin-left: 0;
+}
+
+.resources_text {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.resources_text_description {
+  margin-top: 1.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+.resources_button {
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.resources_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.resources_button svg {
+  color: #ffd11a;
+}
+.resources_button:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.resources_button:hover svg {
+  color: #ffe066;
+}
+.resources_button:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.resources_button:active svg {
+  color: #ffd633;
 }
 
 .grid_empty_right {
@@ -162,16 +266,95 @@ body {
   min-width: 12rem;
 }
 
-.statistics_resources::before {
-  content: "";
-  height: 100%;
-  display: block;
-  background-image: url(../assets/img/rays.png);
-  background-blend-mode: color-dodge;
-  background-repeat: no-repeat;
-  background-size: 121rem;
+/* нижний блок из 3-х разделов */
+.benefits {
+  border-bottom: 0.25rem #262626 solid;
 }
 
-.benefits {
+.benefits_position {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
   display: flex;
+}
+
+.benefit_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5rem;
+  padding: 10rem 12.5rem;
+  border-right: 0.25rem #262626 solid;
+}
+.benefit_container:first-child {
+  padding: 10rem 12.5rem 10rem 0;
+}
+.benefit_container:last-child {
+  padding: 10rem 0 10rem 12.5rem;
+  border: none;
+}
+
+.benefit_image {
+  width: 10rem;
+}
+
+.benefit_content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 3.5rem;
+}
+
+.benefit_content_text {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.benefit_content_description {
+  margin-top: 0.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #7e7e81;
+}
+
+.benefit_button {
+  box-sizing: border-box;
+  height: 11rem;
+  width: 11rem;
+  padding: 3rem;
+  border-radius: 6rem;
+  background-color: #ffd11a;
+  color: #141414;
+  cursor: pointer;
+}
+.benefit_button svg {
+  width: 100%;
+  height: 100%;
+}
+.benefit_button svg {
+  color: #141414;
+}
+.benefit_button:hover {
+  background-color: #ffe066;
+  color: #cccccc;
+}
+.benefit_button:active {
+  background-color: #ffd633;
+  color: #b3b3b3;
+}
+
+.benefit_description {
+  color: #98989a;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
 }/*# sourceMappingURL=hero_section.css.map */

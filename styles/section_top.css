@@ -26,68 +26,10 @@
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
-/* ----------- Контейнеры-карточки ----------- */
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-/* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
 /* ----------- Кнопки и ссылки ----------- */
-.button {
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 500;
-  line-height: 150%;
-  font-size: 3.5rem;
-  text-transform: capitalize;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.yellow {
-  background-color: #ffd11a;
-  color: #141414;
-}
-
-.black {
-  background-color: #141414;
-  color: #98989a;
-  border: 0.0625rem solid #262626;
-}
-
-.active_header {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #141414;
-  border: 0.0625rem solid #333333;
-}
-
-.active_body {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  border: 0.0625rem solid #262626;
-}
-
-/* ----------- Контейнеры-карточки ----------- */
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-/* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
-/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
 .button {
   text-transform: capitalize;
   font-family: "Inter";
@@ -123,9 +65,88 @@
 
 /* ----------- Контейнеры-карточки ----------- */
 body {
-<<<<<<< HEAD
-  background-color: #1a1a1a;
-=======
   background-color: #141414;
->>>>>>> 66a8bc49e79c8c3aa6dd5e4321fe0f585b44875e
-}/*# sourceMappingURL=header.css.map */
+}
+
+.section_top {
+  background-color: #1a1a1a;
+  border-bottom: 0.25rem #262626 solid;
+  padding: 20rem 0;
+}
+
+.section_top_content {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50rem;
+}
+
+.top_badge {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  background-color: #333333;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+
+.top_title {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Kumbh Sans", serif;
+  font-weight: 500;
+  font-size: 11rem;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.text_top_button {
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.text_top_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.text_top_button svg {
+  color: #ffd11a;
+}
+.text_top_button:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.text_top_button:hover svg {
+  color: #ffe066;
+}
+.text_top_button:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.text_top_button:active svg {
+  color: #ffd633;
+}/*# sourceMappingURL=section_top.css.map */

@@ -33,6 +33,8 @@ $Grey_95: #f1f1f3;
 $Grey_97: #f7f7f8;
 $Grey_99: #fcfcfd;
 
+$Border: 0.25rem $Dark_15 solid;
+
 /* ----------- Стили шрифтов ----------- */
 
 @font-face {
@@ -175,7 +177,6 @@ $Grey_99: #fcfcfd;
     font-size: 3.5rem;
 }
 
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 
 /* ----------- Контейнеры-карточки ----------- */
@@ -244,12 +245,87 @@ $Grey_99: #fcfcfd;
 }
 
 .container {
+@mixin container {
     max-width: 344rem;
     padding: 0 12rem;
     margin: 0 auto;
 }
 
 /* ----------- Кнопки и ссылки ----------- */
+<<<<<<< HEAD
+=======
+/* разные настройки размеров кнопок */
+@mixin btn_size_48 {
+    box-sizing: border-box;
+    height: 12rem;
+    padding: 3.5rem 5rem;
+    display: flex;
+    gap: 1rem;
+    border-radius: 2rem;
+    @include txt_body_14;
+    white-space: nowrap;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@mixin btn_circle {
+    box-sizing: border-box;
+    height: 11rem;
+    width: 11rem;
+    padding: 3rem;
+    border-radius: 6rem;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* разные цвета и стили кнопок */
+@mixin btn_black {
+    background-color: $Dark_08;
+    color: $Grey_60;
+    border: $Border;
+    cursor: pointer;
+    svg {
+        color: $Yellow_55;
+    }
+    &:hover {
+        background-color: $Dark_15;
+        color: $Grey_80;
+        border: 0.25rem $Dark_25 solid;
+        svg {
+            color: $Yellow_70;
+        }
+    }
+    &:active {
+        background-color: $Dark_10;
+        color: $Grey_70;
+        border: 0.25rem $Dark_20 solid;
+        svg {
+            color: $Yellow_60;
+        }
+    }
+}
+
+@mixin btn_yellow {
+    background-color: $Yellow_55;
+    color: $Dark_08;
+    cursor: pointer;
+    svg {
+        color: $Dark_08;
+    }
+    &:hover {
+        background-color: $Yellow_70;
+        color: $Grey_80;
+    }
+    &:active {
+        background-color: $Yellow_60;
+        color: $Grey_70;
+    }
+}
+>>>>>>> 66a8bc49e79c8c3aa6dd5e4321fe0f585b44875e
 
 .button {
     text-transform: capitalize;
@@ -286,5 +362,5 @@ $Grey_99: #fcfcfd;
 
 /* ----------- Контейнеры-карточки ----------- */
 body {
-    background-color: $Dark_10;
+    background-color: $Dark_08;
 }
