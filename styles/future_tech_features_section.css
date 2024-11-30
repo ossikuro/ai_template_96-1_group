@@ -26,68 +26,15 @@
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 /* ----------- Контейнеры-карточки ----------- */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
 /* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
 /* ----------- Кнопки и ссылки ----------- */
-.button {
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 500;
-  line-height: 150%;
-  font-size: 3.5rem;
-  text-transform: capitalize;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.yellow {
-  background-color: #ffd11a;
-  color: #141414;
-}
-
-.black {
-  background-color: #141414;
-  color: #98989a;
-  border: 0.0625rem solid #262626;
-}
-
-.active_header {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #141414;
-  border: 0.0625rem solid #333333;
-}
-
-.active_body {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  border: 0.0625rem solid #262626;
-}
-
-/* ----------- Контейнеры-карточки ----------- */
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-/* на макете шрифт Inter Regular */
-/* ----------- Размеры отступов, паддингов ----------- */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-.container {
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
-}
-
-/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
 .button {
   text-transform: capitalize;
   font-family: "Inter";
@@ -123,14 +70,13 @@
 
 /* ----------- Контейнеры-карточки ----------- */
 body {
-  background-color: #1a1a1a;
+  background-color: #141414;
 }
 
 .future_tech_features_top {
   background-color: #1a1a1a;
   height: 64.25rem;
-  border-top: 0.25rem solid #cccccc;
-  border-bottom: 0.25rem solid #cccccc;
+  border-bottom: 0.25rem #262626 solid;
 }
 
 .non-clickable {
@@ -144,7 +90,6 @@ body {
 }
 
 .future_tech_features_blog {
-  background-color: #262626;
   display: flex;
 }
 
@@ -156,7 +101,7 @@ body {
 }
 
 .left_part_blog {
-  border-right: 0.25rem solid #cccccc;
+  border-right: 0.25rem #262626 solid;
   width: 118rem;
 }
 
@@ -174,7 +119,7 @@ body {
 .right_part_blog_card_flex {
   margin: 0 5rem 5rem 0;
   width: 90rem;
-  background-color: #333333;
+  background-color: #1a1a1a;
   color: #ffffff;
   border-radius: 1rem;
   height: 38rem;
@@ -183,7 +128,7 @@ body {
 .left_part_blog_card_flex {
   margin: 0 5rem 5rem 0;
   width: 90rem;
-  background-color: #333333;
+  background-color: #1a1a1a;
   color: #ffffff;
   border-radius: 1rem;
   height: 38rem;
