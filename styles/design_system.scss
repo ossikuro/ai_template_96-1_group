@@ -244,7 +244,6 @@ $Border: 0.25rem $Dark_15 solid;
     margin: 0 auto;
 }
 
-.container {
 @mixin container {
     max-width: 344rem;
     padding: 0 12rem;
@@ -252,8 +251,6 @@ $Border: 0.25rem $Dark_15 solid;
 }
 
 /* ----------- Кнопки и ссылки ----------- */
-<<<<<<< HEAD
-=======
 /* разные настройки размеров кнопок */
 @mixin btn_size_48 {
     box-sizing: border-box;
@@ -325,7 +322,6 @@ $Border: 0.25rem $Dark_15 solid;
         color: $Grey_70;
     }
 }
->>>>>>> 66a8bc49e79c8c3aa6dd5e4321fe0f585b44875e
 
 .button {
     text-transform: capitalize;
