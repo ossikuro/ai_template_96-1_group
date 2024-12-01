@@ -12,21 +12,21 @@
   font-family: "Kumbh Sans";
   src: url("../fonts/KumbhSans-Regular.eot");
   src: local("Kumbh Sans Regular"), local("KumbhSans-Regular"), url("../fonts/KumbhSans-Regular.woff2") format("woff2"), url("../fonts/KumbhSans-Regular.woff") format("woff"), url("../fonts/KumbhSans-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.eot");
   src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter Medium";
   src: url("../fonts/Inter-Medium.eot");
   src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 /* Заголовки, на макете шрифты Kumbh */
@@ -236,6 +236,11 @@ body {
   color: #98989a;
 }
 
+.blogpost_social_buttons {
+  display: flex;
+  gap: 2rem;
+}
+
 .chat_btn,
 .share_btn {
   background-color: #1a1a1a;
@@ -261,7 +266,7 @@ body {
 }
 .chat_btn svg,
 .share_btn svg {
-  color: transparent;
+  fill: #1a1a1a;
   stroke: #666666;
 }
 .chat_btn:hover,
@@ -272,8 +277,8 @@ body {
 }
 .chat_btn:hover svg,
 .share_btn:hover svg {
-  color: transparent;
-  border-color: #98989a;
+  fill: #333333;
+  stroke: #98989a;
 }
 .chat_btn:active,
 .share_btn:active {
@@ -283,7 +288,7 @@ body {
 }
 .chat_btn:active svg,
 .share_btn:active svg {
-  color: transparent;
+  fill: #262626;
   border-color: #7e7e81;
 }
 .chat_btn .icon,
@@ -292,7 +297,7 @@ body {
   height: 5rem;
 }
 
-.favorites_btn[type=checkbox] {
+.favorites_btn#fav {
   background-color: #1a1a1a;
   color: #98989a;
   border: 0.25rem #262626 solid;
@@ -314,34 +319,35 @@ body {
   border-radius: 4rem;
   width: fit-content;
 }
-.favorites_btn[type=checkbox] svg {
-  color: transparent;
+.favorites_btn#fav svg {
+  fill: #1a1a1a;
   stroke: #666666;
 }
-.favorites_btn[type=checkbox]:hover {
+.favorites_btn#fav:hover {
   background-color: #333333;
   color: #cccccc;
   border: 0.25rem #4d4d4d solid;
 }
-.favorites_btn[type=checkbox]:hover svg {
-  color: transparent;
-  border-color: #98989a;
+.favorites_btn#fav:hover svg {
+  fill: #333333;
+  stroke: #98989a;
 }
-.favorites_btn[type=checkbox]:active {
+.favorites_btn#fav:active {
   background-color: #262626;
   color: #b3b3b3;
   border: 0.25rem #404040 solid;
 }
-.favorites_btn[type=checkbox]:active svg {
-  color: transparent;
+.favorites_btn#fav:active svg {
+  fill: #262626;
   border-color: #7e7e81;
 }
-.favorites_btn[type=checkbox] .icon {
+.favorites_btn#fav .icon {
   width: 5rem;
   height: 5rem;
 }
-.favorites_btn[type=checkbox].active svg {
+.favorites_btn#fav.active svg {
   fill: #ff5500;
+  stroke: #ff5500;
 }
 
 /* кнопка-ссылка */

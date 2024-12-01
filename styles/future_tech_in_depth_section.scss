@@ -93,6 +93,11 @@
     color: $Grey_60;
 }
 
+.blogpost_social_buttons {
+    display: flex;
+    gap: 2rem;
+}
+
 .chat_btn,
 .share_btn {
     @include btn_grey;
@@ -100,13 +105,14 @@
     width: fit-content;
 }
 
-.favorites_btn[type='checkbox'] {
+.favorites_btn#fav {
     @include btn_grey;
     @include btn_size_32;
     width: fit-content;
     &.active {
         svg {
             fill: #ff5500;
+            stroke: #ff5500;
         }
     }
 }

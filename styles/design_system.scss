@@ -249,12 +249,6 @@ $Border: 0.25rem $Dark_15 solid;
 /* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 
-@mixin section_container {
-    max-width: 344rem;
-    padding: 0 12rem;
-    margin: 0 auto;
-}
-
 @mixin container {
     max-width: 344rem;
     padding: 0 12rem;
@@ -374,7 +368,7 @@ $Border: 0.25rem $Dark_15 solid;
     border: $Border;
     cursor: pointer;
     svg {
-        color: transparent;
+        fill: $Dark_10;
         stroke: $Dark_40;
     }
     &:hover {
@@ -382,8 +376,8 @@ $Border: 0.25rem $Dark_15 solid;
         color: $Grey_80;
         border: 0.25rem $Dark_30 solid;
         svg {
-            color: transparent;
-            border-color: $Grey_60;
+            fill: $Dark_20;
+            stroke: $Grey_60;
         }
     }
     &:active {
@@ -391,7 +385,7 @@ $Border: 0.25rem $Dark_15 solid;
         color: $Grey_70;
         border: 0.25rem $Dark_25 solid;
         svg {
-            color: transparent;
+            fill: $Dark_15;
             border-color: $Grey_50;
         }
     }
