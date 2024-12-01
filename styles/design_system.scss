@@ -227,6 +227,11 @@ $Border: 0.25rem $Dark_15 solid;
     font-size: 4rem;
 }
 
+@mixin txt_title_14 {
+    @include txt_title;
+    font-size: 3.5rem;
+}
+
 /* на макете шрифт Inter Regular */
 
 @mixin txt_body {
@@ -257,6 +262,40 @@ $Border: 0.25rem $Dark_15 solid;
 
 /* ----------- Кнопки и ссылки ----------- */
 /* разные настройки размеров кнопок */
+@mixin btn_size_32 {
+    box-sizing: border-box;
+    height: 8rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 3rem;
+    @include txt_body_14;
+    border-radius: 4rem;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@mixin btn_size_40 {
+    box-sizing: border-box;
+    height: 10rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem 3.5rem;
+    @include txt_body_14;
+    border-radius: 1.5rem;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
 @mixin btn_size_48 {
     box-sizing: border-box;
     height: 12rem;
@@ -301,20 +340,48 @@ $Border: 0.25rem $Dark_15 solid;
     }
 }
 
-@mixin btn_size_32 {
+@mixin btn_navbar {
     box-sizing: border-box;
-    height: 8rem;
+    height: 10rem;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 1.5rem 3rem;
+    padding: 2.5rem 0rem;
+    background-color: transparent;
+    color: $Grey_50;
     @include txt_body_14;
-    border-radius: 4rem;
-    .icon {
-        width: 5rem;
-        height: 5rem;
+    border-radius: 1.5rem;
+    &:hover {
+        color: $White;
+    }
+    &:active {
+        color: $Grey_80;
+    }
+}
+
+@mixin btn_navbar_current {
+    box-sizing: border-box;
+    height: 10rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem 3.5rem;
+    border-radius: 1.5rem;
+    background-color: $Dark_08;
+    color: $White;
+    border: 0.25rem $Dark_30 solid;
+    @include txt_body_14;
+    &:hover {
+        background-color: $Dark_15;
+        border: 0.25rem $Dark_40 solid;
+    }
+    &:active {
+        background-color: $Dark_25;
+        border: 0.25rem $Dark_35 solid;
     }
 }
 
