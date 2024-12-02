@@ -1,0 +1,25 @@
+@import 'design_system';
+
+.unlock_valuable_part {
+ display: flex;
+}
+
+.container {
+  @include container; margin: 0;
+}
+
+.ebooks_left_part {
+  border-right: $Border;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.ebooks_right_part {
+  width: 200rem;
+}
+
+.btn_grey_unlock_part {
+  @include btn_size_68;
+  width: 102.75rem;
+}
