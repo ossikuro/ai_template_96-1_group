@@ -97,7 +97,7 @@ body {
 @media (max-width: 1024px) {
   .section_top_content {
     max-width: 256rem;
-    padding: 0 7.5rem;
+    padding: 0;
   }
 }
 
@@ -130,6 +130,7 @@ body {
   height: 12rem;
   padding: 3.5rem 5rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
   border-radius: 2rem;
   /* служебный миксин, его использовать не надо */
@@ -167,4 +168,38 @@ body {
 }
 .text_top_button:active svg {
   color: #ffd633;
+}
+
+/* -------- планшет --------*/
+@media (max-width: 1024px) {
+  .section_top {
+    padding: 10rem 8rem;
+  }
+  .section_top_content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+/* -------- телефон --------*/
+@media (max-width: 480px) {
+  .section_top {
+    padding: 10rem 4rem;
+  }
+  .top_badge {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
+  .top_title {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Kumbh Sans", serif;
+    font-weight: 500;
+    font-size: 7rem;
+    line-height: 130%;
+  }
+  .text_top_button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=section_top.css.map */

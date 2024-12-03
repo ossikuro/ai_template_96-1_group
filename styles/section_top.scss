@@ -33,3 +33,36 @@
     @include btn_black;
     width: fit-content;
 }
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+    .section_top {
+        padding: 10rem 8rem;
+    }
+
+    .section_top_content {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+/* -------- телефон --------*/
+
+@media (max-width: 480px) {
+    .section_top {
+        padding: 10rem 4rem;
+    }
+
+    .top_badge {
+        @include txt_title_14;
+    }
+
+    .top_title {
+        @include section_title_S;
+    }
+
+    .text_top_button {
+        width: 100%;
+    }
+}
