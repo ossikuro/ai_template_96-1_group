@@ -84,6 +84,9 @@ body {
 .section {
   border-bottom: 0.25rem #262626 solid;
 }
+.section .container {
+  margin: 0 auto;
+}
 
 /* -------- секция с кнопками-табами --------*/
 .tabs_content {
@@ -166,7 +169,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12.5rem;
-  padding: 15rem 12rem;
+  padding: 15rem 0;
 }
 
 /* автор */
