@@ -8,18 +8,53 @@
   @include container; margin: 0;
 }
 
+.ebooks_container {
+  display: flex;
+}
+
 .ebooks_left_part {
   border-right: $Border;
   display: flex;
   align-items: center;
   margin: 0;
+  width: 44%;
 }
 
 .ebooks_right_part {
-  width: 200rem;
+  width: 56%;
+
+  width: 56%;
+  align-items: end
 }
 
 .btn_grey_unlock_part {
   @include btn_size_68;
-  width: 102.75rem;
+  
+}
+
+.variety_topics {
+  display: flex;
+}
+
+.title_ebooks_right_part{
+  @include txt_title_20;
+  color: $White;
+}
+
+.text_ebooks_right_part {
+  @include txt_title_16;
+  color: $Grey_60;
+}
+
+
+
+.image_girl_red_tshirt {
+  
+  margin: 6rem 0 6rem 10rem;
+}
+
+.image_girl {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2.5rem;
 }

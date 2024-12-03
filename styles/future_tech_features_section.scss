@@ -1,5 +1,9 @@
 @import 'design_system';
 
+// Граница секции
+.future_tech_features {
+  border-bottom: $Border;
+}
 // Шапка секции
 .future_tech_features_top {
   background-color: $Dark_10;
@@ -26,15 +30,18 @@
 }
 
 //  Секция
+.future_tech_features_blog_border {
+  border-bottom: $Border;
+}
+
 .future_tech_features_blog {
   display: flex;
-  border-bottom: $Border;
+  @include container;
 }
 
 // Левая часть секции
 .left_part_features_blog {
   border-right: $Border;
-  @include container;
   display: flex;
   align-items: center;
 }
@@ -60,7 +67,7 @@
 // Правая часть секции
 .right_part_blog {
   position: relative;
-  padding: 15rem 20rem 10rem 10rem;
+  padding: 15rem 0 10rem 10rem;
   width: 62.5%;
 }
 
