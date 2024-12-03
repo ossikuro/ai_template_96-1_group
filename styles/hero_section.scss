@@ -191,3 +191,197 @@
     color: $Grey_60;
     @include txt_title_16;
 }
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+    .statistics {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        border-bottom: none;
+    }
+
+    /* ячейка с заголовком страницы */
+    .grid_empty_left_top {
+        display: none;
+    }
+
+    .statistics_greeting {
+        padding: 10rem 8rem 7.5rem 8rem;
+        border-right: none;
+        border-bottom: $Border;
+    }
+
+    /* ячейка с аватарками */
+    .statistics_resources {
+        grid-column: 1;
+        grid-row: 3;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        padding: 25rem 8rem 10rem 8rem;
+        border-bottom: $Border;
+
+        background-size: 80rem;
+    }
+
+    .grid_empty_right {
+        display: none;
+    }
+
+    /* ячейки с цифрами */
+    .grid_empty_left_bottom {
+        display: none;
+    }
+
+    .statistics_numbers {
+        grid-column: 1;
+        grid-row: 2;
+        box-sizing: border-box;
+        gap: 5rem;
+        padding: 0 7.5rem;
+        border-bottom: $Border;
+    }
+
+    .statistic_number {
+        padding: 7.5rem 0;
+        color: $White;
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+
+    /* нижний блок из 3-х разделов */
+    .benefits {
+        border-bottom: $Border;
+    }
+
+    .benefits_position {
+        @include container;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefit_container {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 2.5rem;
+        padding: 7.5rem 8rem;
+        border-right: none;
+        border-bottom: $Border;
+        &:first-child {
+            padding: 7.5rem 8rem;
+        }
+        &:last-child {
+            padding: 7.5rem 8rem;
+        }
+    }
+}
+
+/* -------- телефон --------*/
+
+@media (max-width: 480px) {
+    /* ячейка с заголовком страницы */
+    .grid_empty_left_top {
+        display: none;
+    }
+
+    .statistics_greeting {
+        padding: 10rem 4rem 7.5rem 4rem;
+        @include page_subtitle_S;
+    }
+
+    .greeting_title {
+        margin-top: 3.5rem;
+        color: $White;
+        @include page_title_S;
+    }
+
+    .greeting_description {
+        margin-top: 2.5rem;
+        @include txt_body_14;
+    }
+
+    /* ячейка с аватарками */
+    .statistics_resources {
+        flex-direction: column;
+        align-items: start;
+        padding: 25rem 4rem 10rem 4rem;
+    }
+
+    .grid_empty_right {
+        display: none;
+    }
+
+    .avatar_frame {
+        width: 10rem;
+        height: 10rem;
+        margin-left: -2.5rem;
+        border-radius: 5rem;
+    }
+
+    .resources_text {
+        @include txt_title_18;
+    }
+
+    .resources_text_description {
+        margin-top: 1rem;
+        @include txt_body_14;
+    }
+
+    .resources_button {
+        @include btn_size_48;
+        @include btn_black;
+        width: 100%;
+    }
+
+    /* ячейки с цифрами */
+    .grid_empty_left_bottom {
+        display: none;
+        min-width: none;
+    }
+
+    .statistics_numbers {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 0 4rem;
+        @include bold_numbers_S;
+        border-bottom: $Border;
+    }
+
+    .statistic_number {
+        padding: 4rem 0;
+        color: $White;
+    }
+
+    /* нижний блок из 3-х разделов */
+
+    .benefit_container {
+        padding: 7.5rem 4rem;
+        &:first-child {
+            padding: 7.5rem 4rem;
+        }
+        &:last-child {
+            padding: 7.5rem 4rem;
+        }
+    }
+
+    .benefit_image {
+        width: 7.5rem;
+    }
+
+    .benefit_content_text {
+        @include txt_title_16;
+    }
+
+    .benefit_content_description {
+        margin-top: 0.5rem;
+        @include txt_body_14;
+    }
+
+    .benefit_description {
+        @include txt_title_14;
+    }
+}

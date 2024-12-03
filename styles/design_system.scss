@@ -258,6 +258,10 @@ $Border: 0.25rem $Dark_15 solid;
     max-width: 344rem;
     padding: 0 12rem;
     margin: 0 auto;
+    @media (max-width: 1024px) {
+        max-width: 256rem;
+        padding: 0;
+    }
 }
 
 /* ----------- Кнопки и ссылки ----------- */
@@ -301,6 +305,7 @@ $Border: 0.25rem $Dark_15 solid;
     height: 12rem;
     padding: 3.5rem 5rem;
     display: flex;
+    justify-content: center;
     gap: 1rem;
     border-radius: 2rem;
     @include txt_body_14;

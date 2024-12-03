@@ -94,6 +94,12 @@ body {
   justify-content: space-between;
   gap: 50rem;
 }
+@media (max-width: 1024px) {
+  .section_top_content {
+    max-width: 256rem;
+    padding: 0 7.5rem;
+  }
+}
 
 .top_badge {
   width: -moz-fit-content;

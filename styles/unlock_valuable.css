@@ -90,6 +90,12 @@ body {
   margin: 0 auto;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .container {
+    max-width: 256rem;
+    padding: 0 7.5rem;
+  }
+}
 
 .ebooks_container {
   display: flex;

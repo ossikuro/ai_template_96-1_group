@@ -97,6 +97,12 @@ body {
   gap: 3.5rem;
   padding: 10rem 12rem;
 }
+@media (max-width: 1024px) {
+  .tabs_content {
+    max-width: 256rem;
+    padding: 0 7.5rem;
+  }
+}
 
 .tabs_button {
   box-sizing: border-box;
@@ -170,6 +176,12 @@ body {
   align-items: flex-start;
   gap: 12.5rem;
   padding: 15rem 0;
+}
+@media (max-width: 1024px) {
+  .blogpost_wrapper {
+    max-width: 256rem;
+    padding: 0 7.5rem;
+  }
 }
 
 /* автор */

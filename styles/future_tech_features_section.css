@@ -123,6 +123,12 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .left_part_features_blog {
+    max-width: 256rem;
+    padding: 0 7.5rem;
+  }
+}
 
 .left_part_blog_img {
   margin-bottom: 10rem;

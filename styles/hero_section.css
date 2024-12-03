@@ -233,6 +233,7 @@ body {
   height: 12rem;
   padding: 3.5rem 5rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
   border-radius: 2rem;
   /* служебный миксин, его использовать не надо */
@@ -288,6 +289,12 @@ body {
   padding: 0 12rem;
   margin: 0 auto;
   display: flex;
+}
+@media (max-width: 1024px) {
+  .benefits_position {
+    max-width: 256rem;
+    padding: 0;
+  }
 }
 
 .benefit_container {
@@ -369,4 +376,248 @@ body {
   font-weight: 500;
   line-height: 150%;
   font-size: 4rem;
+}
+
+/* -------- планшет --------*/
+@media (max-width: 1024px) {
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    border-bottom: none;
+  }
+  /* ячейка с заголовком страницы */
+  .grid_empty_left_top {
+    display: none;
+  }
+  .statistics_greeting {
+    padding: 10rem 8rem 7.5rem 8rem;
+    border-right: none;
+    border-bottom: 0.25rem #262626 solid;
+  }
+  /* ячейка с аватарками */
+  .statistics_resources {
+    grid-column: 1;
+    grid-row: 3;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 25rem 8rem 10rem 8rem;
+    border-bottom: 0.25rem #262626 solid;
+    background-size: 80rem;
+  }
+  .grid_empty_right {
+    display: none;
+  }
+  /* ячейки с цифрами */
+  .grid_empty_left_bottom {
+    display: none;
+  }
+  .statistics_numbers {
+    grid-column: 1;
+    grid-row: 2;
+    box-sizing: border-box;
+    gap: 5rem;
+    padding: 0 7.5rem;
+    border-bottom: 0.25rem #262626 solid;
+  }
+  .statistic_number {
+    padding: 7.5rem 0;
+    color: #ffffff;
+  }
+  .statistic_number:last-of-type {
+    border-right: none;
+  }
+  /* нижний блок из 3-х разделов */
+  .benefits {
+    border-bottom: 0.25rem #262626 solid;
+  }
+  .benefits_position {
+    max-width: 344rem;
+    padding: 0 12rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .benefits_position {
+    max-width: 256rem;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .benefit_container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 2.5rem;
+    padding: 7.5rem 8rem;
+    border-right: none;
+    border-bottom: 0.25rem #262626 solid;
+  }
+  .benefit_container:first-child {
+    padding: 7.5rem 8rem;
+  }
+  .benefit_container:last-child {
+    padding: 7.5rem 8rem;
+  }
+}
+/* -------- телефон --------*/
+@media (max-width: 480px) {
+  /* ячейка с заголовком страницы */
+  .grid_empty_left_top {
+    display: none;
+  }
+  .statistics_greeting {
+    padding: 10rem 4rem 7.5rem 4rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Kumbh Sans", serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 120%;
+  }
+  .greeting_title {
+    margin-top: 3.5rem;
+    color: #ffffff;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Kumbh Sans", serif;
+    font-weight: 500;
+    font-size: 7.5rem;
+    line-height: 120%;
+  }
+  .greeting_description {
+    margin-top: 2.5rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
+  /* ячейка с аватарками */
+  .statistics_resources {
+    flex-direction: column;
+    align-items: start;
+    padding: 25rem 4rem 10rem 4rem;
+  }
+  .grid_empty_right {
+    display: none;
+  }
+  .avatar_frame {
+    width: 10rem;
+    height: 10rem;
+    margin-left: -2.5rem;
+    border-radius: 5rem;
+  }
+  .resources_text {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 4.5rem;
+  }
+  .resources_text_description {
+    margin-top: 1rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
+  .resources_button {
+    box-sizing: border-box;
+    height: 12rem;
+    padding: 3.5rem 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+    white-space: nowrap;
+    background-color: #141414;
+    color: #98989a;
+    border: 0.25rem #262626 solid;
+    cursor: pointer;
+    width: 100%;
+  }
+  .resources_button .icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .resources_button svg {
+    color: #ffd11a;
+  }
+  .resources_button:hover {
+    background-color: #262626;
+    color: #cccccc;
+    border: 0.25rem #404040 solid;
+  }
+  .resources_button:hover svg {
+    color: #ffe066;
+  }
+  .resources_button:active {
+    background-color: #1a1a1a;
+    color: #b3b3b3;
+    border: 0.25rem #333333 solid;
+  }
+  .resources_button:active svg {
+    color: #ffd633;
+  }
+  /* ячейки с цифрами */
+  .grid_empty_left_bottom {
+    display: none;
+    min-width: none;
+  }
+  .statistics_numbers {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0 4rem;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 150%;
+    border-bottom: 0.25rem #262626 solid;
+  }
+  .statistic_number {
+    padding: 4rem 0;
+    color: #ffffff;
+  }
+  /* нижний блок из 3-х разделов */
+  .benefit_container {
+    padding: 7.5rem 4rem;
+  }
+  .benefit_container:first-child {
+    padding: 7.5rem 4rem;
+  }
+  .benefit_container:last-child {
+    padding: 7.5rem 4rem;
+  }
+  .benefit_image {
+    width: 7.5rem;
+  }
+  .benefit_content_text {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 4rem;
+  }
+  .benefit_content_description {
+    margin-top: 0.5rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
+  .benefit_description {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
 }/*# sourceMappingURL=hero_section.css.map */
