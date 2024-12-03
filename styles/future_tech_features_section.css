@@ -80,6 +80,10 @@ body {
   background-color: #141414;
 }
 
+.future_tech_features {
+  border-bottom: 0.25rem #262626 solid;
+}
+
 .future_tech_features_top {
   background-color: #1a1a1a;
   height: 64.25rem;
@@ -103,16 +107,19 @@ body {
   font-weight: 500;
 }
 
+.future_tech_features_blog_border {
+  border-bottom: 0.25rem #262626 solid;
+}
+
 .future_tech_features_blog {
   display: flex;
-  border-bottom: 0.25rem #262626 solid;
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
 }
 
 .left_part_features_blog {
   border-right: 0.25rem #262626 solid;
-  max-width: 344rem;
-  padding: 0 12rem;
-  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -142,7 +149,7 @@ body {
 
 .right_part_blog {
   position: relative;
-  padding: 15rem 20rem 10rem 10rem;
+  padding: 15rem 0 10rem 10rem;
   width: 62.5%;
 }
 

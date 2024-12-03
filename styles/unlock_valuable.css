@@ -91,15 +91,22 @@ body {
   margin: 0;
 }
 
+.ebooks_container {
+  display: flex;
+}
+
 .ebooks_left_part {
   border-right: 0.25rem #262626 solid;
   display: flex;
   align-items: center;
   margin: 0;
+  width: 44%;
 }
 
 .ebooks_right_part {
-  width: 200rem;
+  width: 56%;
+  width: 56%;
+  align-items: end;
 }
 
 .btn_grey_unlock_part {
@@ -117,9 +124,41 @@ body {
   line-height: 150%;
   font-size: 3.5rem;
   white-space: nowrap;
-  width: 102.75rem;
 }
 .btn_grey_unlock_part .icon {
   width: 5rem;
   height: 5rem;
+}
+
+.variety_topics {
+  display: flex;
+}
+
+.title_ebooks_right_part {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.text_ebooks_right_part {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+.image_girl_red_tshirt {
+  margin: 6rem 0 6rem 10rem;
+}
+
+.image_girl {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2.5rem;
 }/*# sourceMappingURL=unlock_valuable.css.map */
