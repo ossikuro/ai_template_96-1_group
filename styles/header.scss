@@ -1,1 +1,50 @@
 @import 'design_system';
+
+.newsletter {
+    color: $Grey_50;
+    font-size: 3.25rem;
+}
+
+.tap_btn_home {
+   @include btn_navbar_current;
+}
+
+.tap_btn_news {
+    @include btn_navbar;
+}
+
+.tap_btn_pdc {
+    @include btn_navbar;
+}
+
+.tap_btn_blg {
+    @include btn_navbar;
+}
+
+.tap_btn_cnt {
+    @include btn_yellow;
+}
+
+.icon_heder {
+    @include btn_black;
+}
+
+.post_button_heder {
+   @include btn_size_48;
+   @include btn_black;
+   border: none;
+   &:hover {
+    background-color: $Dark_08;
+    border: none;
+   }
+   &:active {
+    background-color: $Dark_08;
+    border: none;
+   }
+}
+
+.nav_bar {
+    background-color: $Dark_10;
+    height: 20.25rem;
+    border: $Border;
+}
