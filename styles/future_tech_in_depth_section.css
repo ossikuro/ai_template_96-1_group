@@ -99,8 +99,13 @@ body {
 }
 @media (max-width: 1024px) {
   .tabs_content {
-    max-width: 256rem;
-    padding: 0 7.5rem;
+    max-width: none;
+    padding: 0rem;
+  }
+}
+@media (max-width: 480px) {
+  .tabs_content {
+    padding: 0 4rem;
   }
 }
 
@@ -179,8 +184,13 @@ body {
 }
 @media (max-width: 1024px) {
   .blogpost_wrapper {
-    max-width: 256rem;
-    padding: 0 7.5rem;
+    max-width: none;
+    padding: 0rem;
+  }
+}
+@media (max-width: 480px) {
+  .blogpost_wrapper {
+    padding: 0 4rem;
   }
 }
 
@@ -214,6 +224,10 @@ body {
   line-height: 150%;
   font-size: 3.5rem;
   color: #98989a;
+}
+
+.mobile-wrapper .post_button {
+  display: none;
 }
 
 /* тема */
@@ -371,6 +385,7 @@ body {
   height: 12rem;
   padding: 3.5rem 5rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
   border-radius: 2rem;
   /* служебный миксин, его использовать не надо */
@@ -408,4 +423,72 @@ body {
 }
 .post_button:active svg {
   color: #ffd633;
+}
+
+/* -------- планшет --------*/
+@media (max-width: 1024px) {
+  .tabs_content {
+    gap: 2.5rem;
+    padding: 4rem 8rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  /* -------- одна статейка -------- */
+  .blogpost_wrapper {
+    flex-direction: column;
+    gap: 10;
+    padding: 10rem 0;
+  }
+  /* автор */
+  .mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-wrapper .post_button {
+    display: flex;
+  }
+  /* тема */
+  .blogpost_wrapper > .post_button {
+    display: none;
+  }
+}
+/* -------- телефон --------*/
+@media (max-width: 480px) {
+  .blogpost_wrapper {
+    gap: 7.5rem;
+  }
+  /* тема */
+  .blogpost_preview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8rem;
+  }
+  .blogpost_preview {
+    gap: 5rem;
+  }
+  .blogpost_date {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 4rem;
+  }
+  .blogpost_name {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 4.5rem;
+  }
+  .blogpost_description {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
 }/*# sourceMappingURL=future_tech_in_depth_section.css.map */

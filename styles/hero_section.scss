@@ -258,7 +258,6 @@
     }
 
     .benefits_position {
-        @include container;
         display: flex;
         flex-direction: column;
     }

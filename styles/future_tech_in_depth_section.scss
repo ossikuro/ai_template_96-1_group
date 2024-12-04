@@ -73,6 +73,12 @@
     color: $Grey_60;
 }
 
+.mobile-wrapper {
+    & .post_button {
+        display: none;
+    }
+}
+
 /* тема */
 .blogpost_preview {
     display: flex;
@@ -125,4 +131,72 @@
     @include btn_size_48;
     @include btn_black;
     width: fit-content;
+}
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+    .tabs_content {
+        gap: 2.5rem;
+        padding: 4rem 8rem;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+    /* -------- одна статейка -------- */
+
+    .blogpost_wrapper {
+        flex-direction: column;
+        gap: 10;
+        padding: 10rem 0;
+    }
+
+    /* автор */
+
+    .mobile-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        & .post_button {
+            display: flex;
+        }
+    }
+
+    /* тема */
+    .blogpost_wrapper > .post_button {
+        display: none;
+    }
+}
+
+/* -------- телефон --------*/
+@media (max-width: 480px) {
+    .blogpost_wrapper {
+        gap: 7.5rem;
+    }
+
+    /* тема */
+
+    .blogpost_preview {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8rem;
+    }
+
+    .blogpost_preview {
+        gap: 5rem;
+    }
+
+    .blogpost_date {
+        @include txt_title_16;
+    }
+
+    .blogpost_name {
+        @include txt_title_18;
+    }
+
+    .blogpost_description {
+        @include txt_body_14;
+    }
 }

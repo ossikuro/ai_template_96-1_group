@@ -117,17 +117,22 @@ body {
   padding: 0 12rem;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .future_tech_features_blog {
+    max-width: none;
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .future_tech_features_blog {
+    padding: 0 4rem;
+  }
+}
 
 .left_part_features_blog {
   border-right: 0.25rem #262626 solid;
   display: flex;
   align-items: center;
-}
-@media (max-width: 1024px) {
-  .left_part_features_blog {
-    max-width: 256rem;
-    padding: 0 7.5rem;
-  }
 }
 
 .left_part_blog_img {

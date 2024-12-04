@@ -259,8 +259,11 @@ $Border: 0.25rem $Dark_15 solid;
     padding: 0 12rem;
     margin: 0 auto;
     @media (max-width: 1024px) {
-        max-width: 256rem;
-        padding: 0;
+        max-width: none;
+        padding: 0rem;
+    }
+    @media (max-width: 480px) {
+        padding: 0 4rem;
     }
 }
 
