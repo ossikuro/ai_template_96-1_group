@@ -1,0 +1,216 @@
+@import 'design_system';
+/* Первая линия с главной новостью */
+
+.main_news_line {
+    @include container;
+    display: flex;
+    gap: 10rem;
+    padding: 15rem 12rem;
+    border-bottom: $Border;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10rem;
+}
+
+.news_cover {
+    width: 129rem;
+    height: 81rem;
+    border-radius: 2.5rem;
+    background-image: url(../assets/img/news/News_main_cover.png);
+    background-size: cover;
+}
+
+.main_news_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10rem;
+    padding-top: 6rem;
+}
+
+.main_news_title {
+    @include txt_title_24;
+    color: $White;
+}
+
+.main_news_title_description {
+    margin-top: 3.5rem;
+    @include txt_body_18;
+    color: $Grey_60;
+}
+
+.main_news_parametrs {
+    display: flex;
+    gap: 7.5rem;
+}
+
+.main_news_parametr {
+    @include txt_body_16;
+    color: $Grey_60;
+}
+
+.main_news_parametr_value {
+    margin-top: 0.5rem;
+    color: $White;
+}
+
+.main_news_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read_more_btn {
+    @include btn_size_48;
+    @include btn_black;
+}
+
+/* Вторая линия с главной новостью */
+.second_news_line {
+    @include container;
+    padding: 7.5rem 12rem;
+    border-bottom: $Border;
+}
+
+.news_grid {
+    display: flex;
+    gap: 7.5rem;
+}
+
+.small_news_preview {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+.news_cover_small {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 2.5rem;
+    background-size: cover;
+}
+
+.news_cover_content {
+    @include txt_title_16;
+    color: $White;
+}
+.news_cover_content_theme {
+    margin-top: 1rem;
+    @include txt_body_16;
+    color: $Grey_60;
+}
+
+.small_news_cover_buttons {
+    display: flex;
+    align-items: center;
+    gap: 12.5rem;
+}
+
+.read_more_btn_with_arrow {
+    @include btn_size_48;
+    @include btn_black;
+    width: 100%;
+}
+
+#news_1 {
+    background-image: url(../assets/img/news/News_grid_1.png);
+}
+
+#news_2 {
+    background-image: url(../assets/img/news/News_grid_2.png);
+}
+
+#news_3 {
+    background-image: url(../assets/img/news/News_grid_3.png);
+}
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+    /* Первая линия с главной новостью */
+    .main_news_line {
+        gap: 10rem;
+        padding: 10rem 8rem;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .news_cover {
+        width: 100%;
+        height: auto;
+        max-height: 112rem;
+        aspect-ratio: 16/9;
+        border-radius: 2.5rem;
+        background-image: url(../assets/img/news/News_main_cover.png);
+        background-size: cover;
+    }
+
+    .small_news_cover_buttons {
+        justify-content: space-between;
+    }
+
+    .main_news_content {
+        padding-top: 0;
+    }
+
+    /* Вторая линия с главной новостью */
+    .second_news_line {
+        padding: 7.5rem 8rem;
+    }
+
+    .news_grid {
+        flex-direction: column;
+    }
+
+    .read_more_btn_with_arrow {
+        max-width: 70rem;
+    }
+}
+
+/* -------- телефон --------*/
+
+@media (max-width: 480px) {
+    /* Первая линия с главной новостью */
+    .main_news_line {
+        gap: 7.5rem;
+        padding: 10rem 4rem;
+    }
+
+    .main_news_content {
+        gap: 5rem;
+    }
+
+    .main_news_title {
+        @include txt_title_20;
+    }
+
+    .main_news_title_description {
+        margin-top: 1.5rem;
+        @include txt_body_16;
+    }
+
+    .main_news_parametrs {
+        gap: 5rem;
+    }
+
+    .main_news_parametr {
+        @include txt_body_14;
+    }
+
+    .main_news_buttons {
+        align-items: center;
+    }
+
+    /* Вторая линия с главной новостью */
+    .second_news_line {
+        padding: 7.5rem 4rem;
+    }
+
+    .read_more_btn_with_arrow {
+        max-width: 70rem;
+    }
+}

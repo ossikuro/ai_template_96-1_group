@@ -1,0 +1,66 @@
+@import 'design_system';
+
+.page_name {
+    border-bottom: $Border;
+    padding: 20rem 0 25rem 0;
+}
+
+.desctop_page_name_wrapper {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    @include page_title_L;
+    color: $White;
+}
+
+.mobile_page_name_wrapper {
+    display: none;
+}
+.name_second_line {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.page_name_description {
+    @include txt_body_16;
+    color: $Grey_60;
+}
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+    .page_name {
+        padding: 10rem 0 15rem 0;
+    }
+
+    .desctop_page_name_wrapper {
+        display: none;
+    }
+
+    .mobile_page_name_wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8rem;
+        @include page_title_L;
+        color: $White;
+    }
+}
+
+/* -------- телефон --------*/
+
+@media (max-width: 480px) {
+    .page_name {
+        padding: 10rem 4rem 5rem 4rem;
+    }
+
+    .mobile_page_name_wrapper {
+        padding: 0;
+        @include page_title_S;
+    }
+
+    .page_name_description {
+        @include txt_body_14;
+    }
+}

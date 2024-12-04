@@ -147,8 +147,8 @@
 
     .blogpost_wrapper {
         flex-direction: column;
-        gap: 10;
-        padding: 10rem 0;
+        gap: 10rem;
+        padding: 10rem 8rem;
     }
 
     /* автор */
@@ -171,8 +171,18 @@
 
 /* -------- телефон --------*/
 @media (max-width: 480px) {
+    .tabs_content {
+        padding: 4rem 4rem;
+    }
+
     .blogpost_wrapper {
         gap: 7.5rem;
+    }
+
+    /* -------- одна статейка -------- */
+
+    .blogpost_wrapper {
+        padding: 7.5rem 0;
     }
 
     /* тема */

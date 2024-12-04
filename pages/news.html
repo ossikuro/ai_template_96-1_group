@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>News</title>
+
+        <!--подключаем шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!--подключаем CSS-->
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/normalize.css" />
+        <link rel="stylesheet" href="../styles/design_system.css" />
+        <link rel="stylesheet" href="../styles/section_top.css" />
+        <link rel="stylesheet" href="../styles/header.css" />
+        <link rel="stylesheet" href="../styles/page_name.css" />
+        <link rel="stylesheet" href="../styles/news_hero_section.css" />
+        <link
+            rel="stylesheet"
+            href="../styles/future_tech_in_depth_section.css"
+        />
+        <link rel="stylesheet" href="../styles/footer.css" />
+    </head>
+    <body>
+        <section class="page_name">
+            <div class="desctop_page_name_wrapper">
+                <div class="name_first_line">Today's Headlines: Stay</div>
+                <div class="name_second_line">
+                    Informed
+                    <div class="page_name_description">
+                        Explore the latest news from around the world. We bring
+                        you up-to-the-minute updates on the most significant
+                        events, trends, and stories. Discover the world through
+                        our news coverage.
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_page_name_wrapper">
+                Today's Headlines: Stay Informed
+                <div class="page_name_description">
+                    Explore the latest news from around the world. We bring you
+                    up-to-the-minute updates on the most significant events,
+                    trends, and stories. Discover the world through our news
+                    coverage.
+                </div>
+            </div>
+        </section>
+        <section class="news_hero_section">
+            <article class="main_news_line">
+                <div class="container wrapper">
+                    <div>
+                        <div class="news_cover"></div>
+                    </div>
+                    <div class="main_news_content">
+                        <div class="main_news_title">
+                            Global Climate Summit Addresses Urgent Climate
+                            Action
+                            <div class="main_news_title_description">
+                                World leaders gathered at the Global Climate
+                                Summit to discuss urgent climate action,
+                                emissions reductions, and renewable energy
+                                targets.
+                            </div>
+                        </div>
+                        <div class="main_news_parametrs">
+                            <div class="main_news_parametr">
+                                Category
+                                <div class="main_news_parametr_value">
+                                    Environment
+                                </div>
+                            </div>
+                            <div class="main_news_parametr">
+                                Publication Date
+                                <div class="main_news_parametr_value">
+                                    October 10, 2023
+                                </div>
+                            </div>
+                            <div class="main_news_parametr">
+                                Author
+                                <div class="main_news_parametr_value">
+                                    Jane Smith
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_news_buttons">
+                            <div class="blogpost_social_buttons">
+                                <button
+                                    class="favorites_btn"
+                                    id="fav"
+                                    onclick="this.classList.toggle('active')"
+                                >
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_favorites.svg#favorites"
+                                        ></use>
+                                    </svg>
+                                    14k
+                                </button>
+                                <button class="chat_btn" role="button">
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_chat.svg#chat"
+                                        ></use>
+                                    </svg>
+                                    24
+                                </button>
+                            </div>
+                            <a class="read_more_btn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="second_news_line">
+                <div class="news_grid">
+                    <article class="small_news_preview">
+                        <div>
+                            <div class="news_cover_small" id="news_1"></div>
+                        </div>
+                        <div class="news_cover_content">
+                            A Decisive Victory for Progressive Policies
+                            <div class="news_cover_content_theme">Politics</div>
+                        </div>
+                        <div class="small_news_cover_buttons">
+                            <div class="blogpost_social_buttons">
+                                <button
+                                    class="favorites_btn"
+                                    id="fav"
+                                    onclick="this.classList.toggle('active')"
+                                >
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_favorites.svg#favorites"
+                                        ></use>
+                                    </svg>
+                                    2.2k
+                                </button>
+                                <button class="chat_btn" role="button">
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_chat.svg#chat"
+                                        ></use>
+                                    </svg>
+                                    60
+                                </button>
+                            </div>
+                            <a class="read_more_btn_with_arrow" href=""
+                                >Read More
+                                <svg class="icon">
+                                    <use
+                                        href="../assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="small_news_preview">
+                        <div>
+                            <div class="news_cover_small" id="news_2"></div>
+                        </div>
+                        <div class="news_cover_content">
+                            Tech Giants Unveil Cutting-Edge AI Innovations
+                            <div class="news_cover_content_theme">
+                                Technology
+                            </div>
+                        </div>
+                        <div class="small_news_cover_buttons">
+                            <div class="blogpost_social_buttons">
+                                <button
+                                    class="favorites_btn"
+                                    id="fav"
+                                    onclick="this.classList.toggle('active')"
+                                >
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_favorites.svg#favorites"
+                                        ></use>
+                                    </svg>
+                                    6k
+                                </button>
+                                <button class="chat_btn" role="button">
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_chat.svg#chat"
+                                        ></use>
+                                    </svg>
+                                    20
+                                </button>
+                            </div>
+                            <a class="read_more_btn_with_arrow" href=""
+                                >Read More
+                                <svg class="icon">
+                                    <use
+                                        href="../assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="small_news_preview">
+                        <div>
+                            <div class="news_cover_small" id="news_3"></div>
+                        </div>
+                        <div class="news_cover_content">
+                            COVID-19 Variants
+                            <div class="news_cover_content_theme">Health</div>
+                        </div>
+                        <div class="small_news_cover_buttons">
+                            <div class="blogpost_social_buttons">
+                                <button
+                                    class="favorites_btn"
+                                    id="fav"
+                                    onclick="this.classList.toggle('active')"
+                                >
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_favorites.svg#favorites"
+                                        ></use>
+                                    </svg>
+                                    10k
+                                </button>
+                                <button class="chat_btn" role="button">
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_chat.svg#chat"
+                                        ></use>
+                                    </svg>
+                                    124
+                                </button>
+                            </div>
+                            <a class="read_more_btn_with_arrow" href=""
+                                >Read More
+                                <svg class="icon">
+                                    <use
+                                        href="../assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="future_tech_in_depth_section">
+            <article class="section_top">
+                <div class="section_top_content">
+                    <div class="text_top_content">
+                        <div class="top_badge">A Knowledge Treasure Trove</div>
+                        <div class="top_title">
+                            Explore FutureTech's In-Depth Blog Posts
+                        </div>
+                    </div>
+                    <a class="text_top_button">
+                        View All Blogs
+                        <svg class="icon">
+                            <use
+                                href="../assets/icons/Icon_arrow.svg#arrow"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            <article class="section">
+                <div class="tabs_content">
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="true"
+                        aria-controls="tabpanel_All"
+                        name="blog_tabs"
+                        id="tab_btn_all"
+                    >
+                        All
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Technology"
+                        name="blog_tabs"
+                        id="tab_btn_technology"
+                    >
+                        Technology
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Politics"
+                        name="blog_tabs"
+                        id="tab_btn_politics"
+                    >
+                        Politics
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Health"
+                        name="blog_tabs"
+                        id="tab_btn_health"
+                    >
+                        Health
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Enviroment"
+                        name="blog_tabs"
+                        id="tab_btn_enviroment"
+                    >
+                        Environment
+                    </button>
+                    <button
+                        class="tabs_button"
+                        type="tab"
+                        aria-selected="false"
+                        aria-controls="tabpanel_Sports"
+                        name="blog_tabs"
+                        id="tab_btn_sports"
+                    >
+                        Sports
+                    </button>
+                </div>
+            </article>
+            <div id="tabpanel_All">
+                <article class="section">
+                    <div class="container">
+                        <div class="blogpost_wrapper">
+                            <div class="mobile-wrapper">
+                                <div class="blogpost_author">
+                                    <img
+                                        src="../assets/img/avatarts/avatar_men_yellow_shirt.png"
+                                        alt="John Techson"
+                                        class="blogpost_avatar"
+                                    />
+                                    <div class="author_name">
+                                        John Techson
+                                        <div class="blogpost_theme">
+                                            Quantum Computing
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="post_button" href="">
+                                    View Blog
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_arrow.svg#arrow"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="blogpost_preview">
+                                <div class="blogpost_date">
+                                    October 15, 2023
+                                </div>
+                                <div class="blogpost_name">
+                                    The Quantum Leap in Computing
+                                    <div class="blogpost_description">
+                                        Explore the revolution in quantum
+                                        computing, its applications, and its
+                                        potential impact on various industries.
+                                    </div>
+                                </div>
+                                <div class="blogpost_social_buttons">
+                                    <button
+                                        class="favorites_btn"
+                                        id="fav"
+                                        onclick="this.classList.toggle('active')"
+                                    >
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_favorites.svg#favorites"
+                                            ></use>
+                                        </svg>
+                                        24.5k
+                                    </button>
+                                    <button class="chat_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_chat.svg#chat"
+                                            ></use>
+                                        </svg>
+                                        50
+                                    </button>
+                                    <button class="share_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_share.svg#share"
+                                            ></use>
+                                        </svg>
+                                        20
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="post_button" href="">
+                                View Blog
+                                <svg class="icon">
+                                    <use
+                                        href="../assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="section">
+                    <div class="container">
+                        <div class="blogpost_wrapper">
+                            <div class="mobile-wrapper">
+                                <div class="blogpost_author">
+                                    <img
+                                        src="../assets/img/avatarts/avatar_women_stripes.png"
+                                        alt="Sarah Ethicist"
+                                        class="blogpost_avatar"
+                                    />
+                                    <div class="author_name">
+                                        Sarah Ethicist
+                                        <div class="blogpost_theme">
+                                            AI Ethics
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="post_button" href="">
+                                    View Blog
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_arrow.svg#arrow"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="blogpost_preview">
+                                <div class="blogpost_date">
+                                    November 5, 2023
+                                </div>
+                                <div class="blogpost_name">
+                                    The Ethical Dilemmas of AI
+                                    <div class="blogpost_description">
+                                        A deep dive into ethical challenges
+                                        posed by AI, including bias, privacy,
+                                        and transparency.
+                                    </div>
+                                </div>
+                                <div class="blogpost_social_buttons">
+                                    <button
+                                        class="favorites_btn"
+                                        id="fav"
+                                        onclick="this.classList.toggle('active')"
+                                    >
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_favorites.svg#favorites"
+                                            ></use>
+                                        </svg>
+                                        32k
+                                    </button>
+                                    <button class="chat_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_chat.svg#chat"
+                                            ></use>
+                                        </svg>
+                                        72
+                                    </button>
+                                    <button class="share_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_share.svg#share"
+                                            ></use>
+                                        </svg>
+                                        18
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="post_button" href="">
+                                View Blog
+                                <svg class="icon">
+                                    <use
+                                        href="../assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="section">
+                    <div class="container">
+                        <div class="blogpost_wrapper">
+                            <div class="mobile-wrapper">
+                                <div class="blogpost_author">
+                                    <img
+                                        src="../assets/img/avatarts/avatar_men_black_shirt.png"
+                                        alt="Astronomer X"
+                                        class="blogpost_avatar"
+                                    />
+                                    <div class="author_name">
+                                        Astronomer X
+                                        <div class="blogpost_theme">
+                                            Space Exploration
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="post_button" href="">
+                                    View Blog
+                                    <svg class="icon">
+                                        <use
+                                            href="../assets/icons/Icon_arrow.svg#arrow"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="blogpost_preview">
+                                <div class="blogpost_date">
+                                    December 10, 2023
+                                </div>
+                                <div class="blogpost_name">
+                                    The Mars Colonization Challenge
+                                    <div class="blogpost_description">
+                                        Exploring the technical and logistical
+                                        challenges of human colonization on
+                                        Mars.
+                                    </div>
+                                </div>
+                                <div class="blogpost_social_buttons">
+                                    <button
+                                        class="favorites_btn"
+                                        id="fav"
+                                        onclick="this.classList.toggle('active')"
+                                    >
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_favorites.svg#favorites"
+                                            ></use>
+                                        </svg>
+                                        31k
+                                    </button>
+                                    <button class="chat_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_chat.svg#chat"
+                                            ></use>
+                                        </svg>
+                                        20
+                                    </button>
+                                    <button class="share_btn" role="button">
+                                        <svg class="icon">
+                                            <use
+                                                href="../assets/icons/Icon_share.svg#share"
+                                            ></use>
+                                        </svg>
+                                        12
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="post_button" href="">
+                                View Blog
+                                <svg class="icon">
+                                    <use
+                                        href="../assets/icons/Icon_arrow.svg#arrow"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,376 @@
+@charset "UTF-8";
+:root {
+  /* ----------- Константы ----------- */
+  font-size: 4px;
+  letter-spacing: -0.03rem;
+  font-family: "Inter", serif;
+}
+
+/* ----------- Цвета ----------- */
+/* ----------- Стили шрифтов ----------- */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.eot");
+  src: local("Kumbh Sans Regular"), local("KumbhSans-Regular"), url("../fonts/KumbhSans-Regular.woff2") format("woff2"), url("../fonts/KumbhSans-Regular.woff") format("woff"), url("../fonts/KumbhSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot");
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../fonts/Inter-Medium.eot");
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Заголовки, на макете шрифты Kumbh */
+/* Жирные цифры */
+/* Мелкие заголовки, на макете шрифт Inter Medium */
+/* на макете шрифт Inter Regular */
+/* ----------- Размеры отступов, паддингов ----------- */
+/* ----------- Ограничения ширин, шаблоны для @media ----------- */
+/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
+/* ----------- Контейнеры-карточки ----------- */
+body {
+  background-color: #141414;
+}
+
+/* Первая линия с главной новостью */
+.main_news_line {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;
+  padding: 15rem 12rem;
+  border-bottom: 0.25rem #262626 solid;
+}
+@media (max-width: 1024px) {
+  .main_news_line {
+    max-width: none;
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .main_news_line {
+    padding: 0 4rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: 10rem;
+}
+
+.news_cover {
+  width: 129rem;
+  height: 81rem;
+  border-radius: 2.5rem;
+  background-image: url(../assets/img/news/News_main_cover.png);
+  background-size: cover;
+}
+
+.main_news_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10rem;
+  padding-top: 6rem;
+}
+
+.main_news_title {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.main_news_title_description {
+  margin-top: 3.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 4.5rem;
+  color: #98989a;
+}
+
+.main_news_parametrs {
+  display: flex;
+  gap: 7.5rem;
+}
+
+.main_news_parametr {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+.main_news_parametr_value {
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.main_news_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read_more_btn {
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+}
+.read_more_btn .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.read_more_btn svg {
+  color: #ffd11a;
+}
+.read_more_btn:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.read_more_btn:hover svg {
+  color: #ffe066;
+}
+.read_more_btn:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.read_more_btn:active svg {
+  color: #ffd633;
+}
+
+/* Вторая линия с главной новостью */
+.second_news_line {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+  padding: 7.5rem 12rem;
+  border-bottom: 0.25rem #262626 solid;
+}
+@media (max-width: 1024px) {
+  .second_news_line {
+    max-width: none;
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .second_news_line {
+    padding: 0 4rem;
+  }
+}
+
+.news_grid {
+  display: flex;
+  gap: 7.5rem;
+}
+
+.small_news_preview {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.news_cover_small {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 2.5rem;
+  background-size: cover;
+}
+
+.news_cover_content {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.news_cover_content_theme {
+  margin-top: 1rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+.small_news_cover_buttons {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+}
+
+.read_more_btn_with_arrow {
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  width: 100%;
+}
+.read_more_btn_with_arrow .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.read_more_btn_with_arrow svg {
+  color: #ffd11a;
+}
+.read_more_btn_with_arrow:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.read_more_btn_with_arrow:hover svg {
+  color: #ffe066;
+}
+.read_more_btn_with_arrow:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.read_more_btn_with_arrow:active svg {
+  color: #ffd633;
+}
+
+#news_1 {
+  background-image: url(../assets/img/news/News_grid_1.png);
+}
+
+#news_2 {
+  background-image: url(../assets/img/news/News_grid_2.png);
+}
+
+#news_3 {
+  background-image: url(../assets/img/news/News_grid_3.png);
+}
+
+/* -------- планшет --------*/
+@media (max-width: 1024px) {
+  /* Первая линия с главной новостью */
+  .main_news_line {
+    gap: 10rem;
+    padding: 10rem 8rem;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .news_cover {
+    width: 100%;
+    height: auto;
+    max-height: 112rem;
+    aspect-ratio: 16/9;
+    border-radius: 2.5rem;
+    background-image: url(../assets/img/news/News_main_cover.png);
+    background-size: cover;
+  }
+  .small_news_cover_buttons {
+    justify-content: space-between;
+  }
+  .main_news_content {
+    padding-top: 0;
+  }
+  /* Вторая линия с главной новостью */
+  .second_news_line {
+    padding: 7.5rem 8rem;
+  }
+  .news_grid {
+    flex-direction: column;
+  }
+  .read_more_btn_with_arrow {
+    max-width: 70rem;
+  }
+}
+/* -------- телефон --------*/
+@media (max-width: 480px) {
+  /* Первая линия с главной новостью */
+  .main_news_line {
+    gap: 7.5rem;
+    padding: 10rem 4rem;
+  }
+  .main_news_content {
+    gap: 5rem;
+  }
+  .main_news_title {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 5rem;
+  }
+  .main_news_title_description {
+    margin-top: 1.5rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 4rem;
+  }
+  .main_news_parametrs {
+    gap: 5rem;
+  }
+  .main_news_parametr {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
+  .main_news_buttons {
+    align-items: center;
+  }
+  /* Вторая линия с главной новостью */
+  .second_news_line {
+    padding: 7.5rem 4rem;
+  }
+  .read_more_btn_with_arrow {
+    max-width: 70rem;
+  }
+}/*# sourceMappingURL=news_hero_section.css.map */
