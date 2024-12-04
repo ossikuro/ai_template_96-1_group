@@ -80,20 +80,15 @@ body {
   background-color: #141414;
 }
 
-.unlock_valuable_part {
-  display: flex;
-}
-
 .container {
   max-width: 344rem;
   padding: 0 12rem;
   margin: 0 auto;
-  margin: 0;
 }
 @media (max-width: 1024px) {
   .container {
     max-width: none;
-    padding: 0 8rem;
+    padding: 0rem;
   }
 }
 @media (max-width: 480px) {
@@ -106,18 +101,73 @@ body {
   display: flex;
 }
 
+.ebooks_container_border_top {
+  border-top: 0.25rem #262626 solid;
+}
+
 .ebooks_left_part {
   border-right: 0.25rem #262626 solid;
   display: flex;
   align-items: center;
   margin: 0;
-  width: 44%;
+  width: 31%;
+}
+
+.text_left_part_blog {
+  margin-bottom: 7.5rem;
+}
+
+.download_button_wrap {
+  margin-right: 15rem;
+}
+
+.download_button {
+  width: 100%;
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
+  background-color: #1a1a1a;
+}
+.download_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.download_button svg {
+  color: #ffd11a;
+}
+.download_button:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.download_button:hover svg {
+  color: #ffe066;
+}
+.download_button:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.download_button:active svg {
+  color: #ffd633;
 }
 
 .ebooks_right_part {
-  width: 56%;
-  width: 56%;
-  align-items: end;
+  width: 68%;
 }
 
 .btn_grey_unlock_part {
@@ -135,14 +185,53 @@ body {
   line-height: 150%;
   font-size: 3.5rem;
   white-space: nowrap;
+  border: 0.25rem #262626 solid;
+  color: #98989a;
 }
 .btn_grey_unlock_part .icon {
   width: 5rem;
   height: 5rem;
 }
 
+.downloaded_by {
+  border: 0.25rem #262626 solid;
+  height: 25rem;
+  width: 82rem;
+  background-color: #1a1a1a;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  padding: 6rem;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.avatar_frame_ebooks {
+  width: 10rem;
+  height: 10rem;
+  margin-left: -3.5rem;
+  border-radius: 6.5rem;
+  background-color: #1a1a1a;
+  border: 0.25rem #666666 solid;
+}
+.avatar_frame_ebooks:first-child {
+  margin-left: 0;
+}
+
+.resources_avatars_wrapper_ebooks {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 2rem;
+  border-radius: 3rem;
+  background-color: #141414;
+}
+
 .variety_topics {
   display: flex;
+  gap: 4rem;
+  padding: 15rem 0 6rem 15rem;
 }
 
 .title_ebooks_right_part {
@@ -152,19 +241,20 @@ body {
   line-height: 150%;
   font-size: 5rem;
   color: #ffffff;
+  width: 50%;
 }
 
 .text_ebooks_right_part {
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   font-size: 4rem;
   color: #98989a;
 }
 
 .image_girl_red_tshirt {
-  margin: 6rem 0 6rem 10rem;
+  margin: 2rem 0 6rem 15rem;
 }
 
 .image_girl {
@@ -172,4 +262,83 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2.5rem;
+  border: none;
+}
+
+.any_ebooks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 15rem;
+  gap: 6rem;
+}
+
+.download_ebooks {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.total_ebooks {
+  border: 0.25rem #262626 solid;
+  height: 25rem;
+  background-color: #1a1a1a;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem;
+  gap: 0.5rem;
+  width: 30%;
+}
+
+.text_grey_ebooks {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+.text_white_ebooks {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.download_format {
+  border: 0.25rem #262626 solid;
+  height: 25rem;
+  background-color: #1a1a1a;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  padding: 6rem;
+  gap: 0.5rem;
+  width: 68%;
+  margin-left: 4rem;
+  justify-content: space-between;
+}
+
+.average_author {
+  border: 0.25rem #262626 solid;
+  height: 25rem;
+  background-color: #1a1a1a;
+  width: 100%;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem;
+  gap: 0.5rem;
+  margin-bottom: 15rem;
 }/*# sourceMappingURL=unlock_valuable.css.map */
