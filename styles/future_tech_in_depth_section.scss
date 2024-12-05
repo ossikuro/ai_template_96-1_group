@@ -2,9 +2,11 @@
 /* -------- общее --------*/
 .section {
     border-bottom: $Border;
-    .container {
-        margin: 0 auto;
-    }
+}
+
+.container_for_blog {
+    @include container;
+    margin: 0 auto;
 }
 
 /* -------- секция с кнопками-табами --------*/
@@ -148,7 +150,7 @@
     .blogpost_wrapper {
         flex-direction: column;
         gap: 10rem;
-        padding: 10rem 8rem;
+        padding: 10rem 0;
     }
 
     /* автор */

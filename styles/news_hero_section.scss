@@ -2,16 +2,16 @@
 /* Первая линия с главной новостью */
 
 .main_news_line {
-    @include container;
     display: flex;
     gap: 10rem;
-    padding: 15rem 12rem;
     border-bottom: $Border;
 }
 
 .wrapper {
+    @include container;
     display: flex;
     gap: 10rem;
+    padding: 15rem 12rem;
 }
 
 .news_cover {
@@ -68,14 +68,14 @@
 
 /* Вторая линия с главной новостью */
 .second_news_line {
-    @include container;
-    padding: 7.5rem 12rem;
     border-bottom: $Border;
 }
 
 .news_grid {
     display: flex;
     gap: 7.5rem;
+    @include container;
+    padding: 7.5rem 12rem;
 }
 
 .small_news_preview {
