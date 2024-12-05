@@ -33,48 +33,11 @@
 /* Жирные цифры */
 /* Мелкие заголовки, на макете шрифт Inter Medium */
 /* на макете шрифт Inter Regular */
-/* ----------- Ограничения ширин, шаблоны для @media ----------- */
-/* ----------- Контейнеры-карточки ----------- */
-/* Мелкие заголовки, на макете шрифт Inter Medium */
-/* на макете шрифт Inter Regular */
 /* ----------- Размеры отступов, паддингов ----------- */
 /* ----------- Ограничения ширин, шаблоны для @media ----------- */
 /* ----------- Кнопки и ссылки ----------- */
 /* разные настройки размеров кнопок */
 /* разные цвета и стили кнопок */
-.button {
-  text-transform: capitalize;
-  font-family: "Inter";
-  font-size: 0.875rem;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.yellow {
-  background-color: #ffd11a;
-  color: #141414;
-}
-
-.black {
-  background-color: #141414;
-  color: #98989a;
-  border: 0.0625rem solid #262626;
-}
-
-.active_header {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #141414;
-  border: 0.0625rem solid #333333;
-}
-
-.active_body {
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  border: 0.0625rem solid #262626;
-}
-
 /* ----------- Контейнеры-карточки ----------- */
 body {
   background-color: #141414;
@@ -88,7 +51,7 @@ body {
 @media (max-width: 1024px) {
   .container {
     max-width: none;
-    padding: 0rem;
+    padding: 0 8rem;
   }
 }
 @media (max-width: 480px) {
