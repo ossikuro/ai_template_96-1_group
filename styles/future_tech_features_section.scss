@@ -87,11 +87,73 @@
   border-radius: 2.2rem;
   border: $Border;
   padding: 7.5rem;
+  height: 38.5rem;
 }
 
 // Заголовок карточек правой секции
 .blog_card_title {
   @include txt_title_20;
   color: $White;
-  margin-bottom: 4rem;
+  margin: 3.5rem 0 4rem 0;
+}
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+  .future_tech_features_blog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left_part_features_blog {
+    margin-top: 12.5rem;
+    border-right: none;
+  }
+
+  //  Секция с карточками
+
+  .left_part_blog_card_flex {
+  width: 49%;
+  }
+
+.right_part_blog {
+  padding: 15rem 0 10rem 0rem;
+  width: 100%;
+  }
+
+.right_part_blog_card_flex {
+  margin: 0 0 5rem 0;
+  width: 49%;
+  }
+}
+  /* -------- телефон --------*/
+
+@media (max-width: 480px) {
+  .right_part_blog_card{
+  flex-direction: column;
+  }
+
+.right_part_blog_card_flex, .left_part_blog_card_flex {
+  width: 86%;
+  margin: 0 auto;
+  margin: 0 0 5rem 4rem;
+  }
+
+  .title_left_part_blog {
+    @include article_title_S;
+  }
+
+  //  Секция с карточками
+
+  .right_part_blog_card_flex, .left_part_blog_card_flex{
+    height: 30.25rem;
+  }
+
+  .blog_card_title {
+    @include txt_title_18;
+  }
+
+  .text_left_part_blog, .text_right_part_blog {
+    @include txt_body_14;
+  }
 }
