@@ -2,158 +2,171 @@
 
 // Граница секции
 .future_tech_features {
-  border-bottom: $Border;
+    border-bottom: $Border;
 }
 // Шапка секции
 .future_tech_features_top {
-  background-color: $Dark_10;
-  height: 64.25rem;
-  border-bottom: $Border;
+    background-color: $Dark_10;
+    height: 64.25rem;
+    border-bottom: $Border;
 }
 //  Некликабельная кнопка
 .non-clickable {
-  background-color: $Dark_20;
-  padding: 1rem 2rem;
-  color: $White;
-  width: 40.5rem;
-  border-radius: 1rem;
-  margin-top: 20rem;
-  box-sizing: border-box;
+    background-color: $Dark_20;
+    padding: 1rem 2rem;
+    color: $White;
+    width: 40.5rem;
+    border-radius: 1rem;
+    margin-top: 20rem;
+    box-sizing: border-box;
 }
 
 // Заголовок шапки
 .future_tech_title {
-  font-size: 11rem;
-  color: $White;
-  font-family: 'Kumbh Sans';
-  font-weight: 500;
+    font-size: 11rem;
+    color: $White;
+    font-family: 'Kumbh Sans';
+    font-weight: 500;
 }
 
 //  Секция
 .future_tech_features_blog_border {
-  border-bottom: $Border;
+    border-bottom: $Border;
 }
 
 .future_tech_features_blog {
-  display: flex;
-  @include container;
+    display: flex;
+    @include container;
 }
 
 // Левая часть секции
 .left_part_features_blog {
-  border-right: $Border;
-  display: flex;
-  align-items: center;
+    border-right: $Border;
+    display: flex;
+    align-items: center;
 }
 
 // Иконка левой части секции
 .left_part_blog_img {
-  margin-bottom: 10rem;
+    margin-bottom: 10rem;
 }
 
 // Заголовок левой части секции
 .title_left_part_blog {
-  @include article_title_L;
-  color: $White;
-  margin-bottom: 2.2rem;
+    @include article_title_L;
+    color: $White;
+    margin-bottom: 2.2rem;
 }
 
 // Текс левой и правой части секции
-.text_left_part_blog, .text_right_part_blog {
-  @include txt_title_16;
-  color: $Grey_60;
+.text_left_part_blog,
+.text_right_part_blog {
+    @include txt_title_16;
+    color: $Grey_60;
 }
 
 // Правая часть секции
 .right_part_blog {
-  position: relative;
-  padding: 15rem 0 10rem 10rem;
-  width: 62.5%;
+    position: relative;
+    padding: 15rem 0 10rem 10rem;
+    width: 62.5%;
 }
 
 // Блок карточек правой части секции
 .right_part_blog_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 // Карточки правой части секции
-.right_part_blog_card_flex, .left_part_blog_card_flex {
-  margin: 0 0 5rem 5rem;
-  width: 90rem;
-  background-color: $Dark_10;
-  color: $White;
-  border-radius: 2.2rem;
-  border: $Border;
-  padding: 7.5rem;
-  height: 38.5rem;
+.right_part_blog_card_flex,
+.left_part_blog_card_flex {
+    margin: 0 0 5rem 5rem;
+    width: 90rem;
+    background-color: $Dark_10;
+    color: $White;
+    border-radius: 2.2rem;
+    border: $Border;
+    padding: 7.5rem;
+    height: 38.5rem;
 }
 
 // Заголовок карточек правой секции
 .blog_card_title {
-  @include txt_title_20;
-  color: $White;
-  margin: 3.5rem 0 4rem 0;
+    @include txt_title_20;
+    color: $White;
+    margin: 3.5rem 0 4rem 0;
 }
 
 /* -------- планшет --------*/
 
 @media (max-width: 1024px) {
-  .future_tech_features_blog {
-    display: flex;
-    flex-direction: column;
-  }
+    .future_tech_features_blog {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .left_part_features_blog {
-    margin-top: 12.5rem;
-    border-right: none;
-  }
+    .left_part_features_blog {
+        margin-top: 12.5rem;
+        border-right: none;
+    }
 
-  //  Секция с карточками
+    //  Секция с карточками
 
-  .left_part_blog_card_flex {
-  width: 49%;
-  }
+    .left_part_blog_card_flex {
+        width: 49%;
+    }
 
-.right_part_blog {
-  padding: 15rem 0 10rem 0rem;
-  width: 100%;
-  }
+    .right_part_blog {
+        padding: 15rem 0 10rem 0rem;
+        width: 100%;
+    }
 
-.right_part_blog_card_flex {
-  margin: 0 0 5rem 0;
-  width: 49%;
-  }
+    .right_part_blog_card_flex {
+        margin: 0 0 5rem 0;
+        width: 49%;
+    }
 }
-  /* -------- телефон --------*/
+/* -------- телефон --------*/
 
 @media (max-width: 480px) {
-  .right_part_blog_card{
-  flex-direction: column;
-  }
+    .right_part_blog {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
 
-.right_part_blog_card_flex, .left_part_blog_card_flex {
-  width: 86%;
-  margin: 0 auto;
-  margin: 0 0 5rem 4rem;
-  }
+    .right_part_blog_card {
+        flex-direction: column;
+        gap: 5rem;
+    }
 
-  .title_left_part_blog {
-    @include article_title_S;
-  }
+    .right_part_blog_card_flex,
+    .left_part_blog_card_flex {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
 
-  //  Секция с карточками
+    .title_left_part_blog {
+        @include article_title_S;
+    }
 
-  .right_part_blog_card_flex, .left_part_blog_card_flex{
-    height: 30.25rem;
-  }
+    //  Секция с карточками
 
-  .blog_card_title {
-    @include txt_title_18;
-  }
+    .right_part_blog_card_flex,
+    .left_part_blog_card_flex {
+        height: auto;
+    }
 
-  .text_left_part_blog, .text_right_part_blog {
-    @include txt_body_14;
-  }
+    .blog_card_title {
+        @include txt_title_18;
+    }
+
+    .text_left_part_blog,
+    .text_right_part_blog {
+        @include txt_body_14;
+    }
 }

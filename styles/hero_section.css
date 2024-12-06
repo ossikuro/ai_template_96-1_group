@@ -403,6 +403,7 @@ body {
   .benefits_position {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .benefit_container {
     display: flex;
