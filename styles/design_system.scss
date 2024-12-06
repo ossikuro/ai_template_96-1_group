@@ -416,6 +416,27 @@ $Border: 0.25rem $Dark_15 solid;
     }
 }
 
+@mixin btn_white {
+    background-color: transparent;
+    color: $White;
+    cursor: pointer;
+    svg {
+        fill: $White;
+    }
+    &:hover {
+        color: $Yellow_55;
+        svg {
+            fill: $Yellow_55;
+        }
+    }
+    &:active {
+        color: $Yellow_70;
+        svg {
+            fill: $Yellow_70;
+        }
+    }
+}
+
 /* ----------- Контейнеры-карточки ----------- */
 body {
     background-color: $Dark_08;

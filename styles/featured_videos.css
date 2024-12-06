@@ -1,0 +1,209 @@
+@charset "UTF-8";
+:root {
+  /* ----------- Константы ----------- */
+  font-size: 4px;
+  letter-spacing: -0.03rem;
+  font-family: "Inter", serif;
+}
+
+/* ----------- Цвета ----------- */
+/* ----------- Стили шрифтов ----------- */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.eot");
+  src: local("Kumbh Sans Regular"), local("KumbhSans-Regular"), url("../fonts/KumbhSans-Regular.woff2") format("woff2"), url("../fonts/KumbhSans-Regular.woff") format("woff"), url("../fonts/KumbhSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot");
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../fonts/Inter-Medium.eot");
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Заголовки, на макете шрифты Kumbh */
+/* Жирные цифры */
+/* Мелкие заголовки, на макете шрифт Inter Medium */
+/* на макете шрифт Inter Regular */
+/* ----------- Размеры отступов, паддингов ----------- */
+/* ----------- Ограничения ширин, шаблоны для @media ----------- */
+/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
+/* ----------- Контейнеры-карточки ----------- */
+body {
+  background-color: #141414;
+}
+
+.featured_videos {
+  border-bottom: 0.25rem #262626 solid;
+}
+
+.video_row_wrapper {
+  border-bottom: 0.25rem #262626 solid;
+}
+
+.video_row_wrapper:last-of-type {
+  border-bottom: none;
+}
+
+.video_row_container:last-of-type .video_container:last-child {
+  border-bottom: none;
+}
+
+.video_row_container {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .video_row_container {
+    max-width: none;
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .video_row_container {
+    padding: 0 4rem;
+  }
+}
+
+.video_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 50%;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.video_container:first-of-type {
+  padding-right: 12.5rem;
+  border-right: 0.25rem #262626 solid;
+}
+
+.video_container:last-of-type {
+  padding-left: 12.5rem;
+}
+
+/* само видео */
+.video_wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.video_source {
+  border-radius: 2.5rem;
+  width: 100%;
+}
+
+.video_content {
+  padding: 7.5rem;
+  position: relative;
+  bottom: 28rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  color: #98989a;
+}
+
+.play_btn {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+.play_btn svg {
+  fill: #ffffff;
+}
+.play_btn:hover {
+  color: #ffd11a;
+}
+.play_btn:hover svg {
+  fill: #ffd11a;
+}
+.play_btn:active {
+  color: #ffe066;
+}
+.play_btn:active svg {
+  fill: #ffe066;
+}
+
+/* описание к видео */
+.video_description {
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+.video_subtitle {
+  margin-top: 1.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 4rem;
+  color: #98989a;
+}
+
+/* -------- планшет --------*/
+@media (max-width: 1024px) {
+  .video_row_container {
+    flex-direction: column;
+    border-bottom: none;
+  }
+  .video_row_wrapper {
+    border-bottom: none;
+  }
+  .video_container {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 0.25rem #262626 solid;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .video_container:first-of-type {
+    padding-right: 0;
+    border-right: none;
+  }
+  .video_container:last-of-type {
+    padding-left: 0;
+  }
+}
+/* -------- телефон --------*/
+@media (max-width: 480px) {
+  .video_description {
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 4.5rem;
+  }
+  .video_subtitle {
+    margin-top: 1rem;
+    /* служебный миксин, его использовать не надо */
+    font-family: "Inter", serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 3.5rem;
+  }
+}/*# sourceMappingURL=featured_videos.css.map */
