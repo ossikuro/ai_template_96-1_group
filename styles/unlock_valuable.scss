@@ -174,3 +174,169 @@ justify-content: space-between;
   gap: 0.5rem;
   margin-bottom: 15rem;
 }
+
+/* -------- планшет --------*/
+
+@media (max-width: 1220px) {
+  .downloaded_by {
+    width: 70rem;
+    padding: 4rem;
+  }
+
+  .download_format{
+    padding: 5rem;
+  }
+}
+
+/* -------- планшет --------*/
+
+@media (max-width: 1024px) {
+  .ebooks_container {
+    display: block;
+  }
+
+  .ebooks_left_part{
+    border: none;
+    width: 100%;
+    display: block;
+  }
+
+  .left_part_blog_img {
+    margin-top: 10rem;
+  }
+
+  .media_tablet_flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 7.5rem;
+  }
+
+  .text_left_part_blog {
+    width: 50%;
+    margin: 0;
+  }
+
+  .download_button_wrap {
+    margin: 0;
+    width: 50%;
+  }
+
+  .downloaded_by {
+    width: 100%;
+  }
+
+  .text_grey_ebooks{
+    @include txt_body_16;
+  }
+
+  .text_white_ebooks{
+    @include txt_title_18;
+  }
+
+  .ebooks_right_part {
+    width: 100%;
+  }
+
+  .variety_topics {
+    padding: 15rem 0 15rem 0;
+  }
+
+.image_girl_red_tshirt {
+  margin: 0;
+  }
+
+.any_ebooks {
+  padding: 6rem 0;
+  }
+}
+
+/* -------- телефон --------*/
+
+@media (max-width: 600px) {
+  .text_grey_ebooks{
+    @include txt_body_14;
+  }
+
+  .text_white_ebooks{
+    @include txt_title_16;
+  }
+
+  .download_format{
+    padding: 4rem;
+  }
+
+  .download_button_wrap {
+    width: 60%;
+  }
+}
+
+/* -------- телефон --------*/
+
+@media (max-width: 480px) {
+  .media_tablet_flex {
+    display: block;
+  }
+
+  .text_left_part_blog{
+    width: 100%;
+  }
+
+  .download_button_wrap {
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  .ebooks_right_part {
+    border-top: $Border;
+    margin-top: 10rem;
+  }
+
+  .variety_topics {
+    display: block;
+    padding: 10rem 0 6rem 0;
+  }
+
+  .title_ebooks_right_part {
+    @include txt_title_18;
+  }
+
+  .text_ebooks_right_part{
+    margin-top: 2.5rem;
+    @include txt_body_14;
+  }
+
+  .download_ebooks {
+    display: block;
+  }
+
+  .total_ebooks {
+    width: 100%;
+  }  
+
+  .download_format {
+    width: 100%; 
+    margin: 4rem 0;
+  }
+
+  .total_ebooks {
+    padding: 4rem;
+  }
+
+  .any_ebooks {
+    gap: 0;
+  }
+
+  .average_author {
+    margin-bottom: 5rem;
+    padding: 4rem;
+  }
+
+  .downloaded_by {
+    margin-top: 5rem;
+  }
+
+  .for_mobile_size {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
