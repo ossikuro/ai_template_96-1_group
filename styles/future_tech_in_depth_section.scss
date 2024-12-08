@@ -116,9 +116,7 @@
     width: fit-content;
 }
 
-.favorites_btn#fav1,
-.favorites_btn#fav2,
-.favorites_btn#fav3 {
+.favorites_btn {
     @include btn_grey;
     @include btn_size_32;
     width: fit-content;

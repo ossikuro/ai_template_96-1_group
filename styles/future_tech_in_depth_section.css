@@ -304,9 +304,7 @@ body {
   height: 5rem;
 }
 
-.favorites_btn#fav1,
-.favorites_btn#fav2,
-.favorites_btn#fav3 {
+.favorites_btn {
   background-color: #1a1a1a;
   color: #98989a;
   border: 0.25rem #262626 solid;
@@ -328,47 +326,33 @@ body {
   border-radius: 4rem;
   width: fit-content;
 }
-.favorites_btn#fav1 svg,
-.favorites_btn#fav2 svg,
-.favorites_btn#fav3 svg {
+.favorites_btn svg {
   fill: #1a1a1a;
   stroke: #666666;
 }
-.favorites_btn#fav1:hover,
-.favorites_btn#fav2:hover,
-.favorites_btn#fav3:hover {
+.favorites_btn:hover {
   background-color: #333333;
   color: #cccccc;
   border: 0.25rem #4d4d4d solid;
 }
-.favorites_btn#fav1:hover svg,
-.favorites_btn#fav2:hover svg,
-.favorites_btn#fav3:hover svg {
+.favorites_btn:hover svg {
   fill: #333333;
   stroke: #98989a;
 }
-.favorites_btn#fav1:active,
-.favorites_btn#fav2:active,
-.favorites_btn#fav3:active {
+.favorites_btn:active {
   background-color: #262626;
   color: #b3b3b3;
   border: 0.25rem #404040 solid;
 }
-.favorites_btn#fav1:active svg,
-.favorites_btn#fav2:active svg,
-.favorites_btn#fav3:active svg {
+.favorites_btn:active svg {
   fill: #262626;
   border-color: #7e7e81;
 }
-.favorites_btn#fav1 .icon,
-.favorites_btn#fav2 .icon,
-.favorites_btn#fav3 .icon {
+.favorites_btn .icon {
   width: 5rem;
   height: 5rem;
 }
-.favorites_btn#fav1.active svg,
-.favorites_btn#fav2.active svg,
-.favorites_btn#fav3.active svg {
+.favorites_btn.active svg {
   fill: #ff5500;
   stroke: #ff5500;
 }
