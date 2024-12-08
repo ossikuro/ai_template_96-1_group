@@ -1175,6 +1175,16 @@
 
             // Обработчик клика для кнопки закрытия меню
             mobileCloseButton.addEventListener('click', closeMenu)
+
+            // При загрузке страницы сразу скрываем меню
+            window.addEventListener('load', () => {
+                mobileNavbar.style.display = 'none' // Скрываем меню при загрузке
+            })
+
+            // При загрузке страницы сразу скрываем меню
+            window.addEventListener('load', () => {
+                mobileNavbar.style.display = 'none' // Скрываем меню при загрузке
+            })
         </script>
     </body>
 </html>
