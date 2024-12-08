@@ -72,7 +72,7 @@
 .bottom-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     height: 26.5rem;
 }
 
@@ -119,6 +119,11 @@
     @include txt_body_18;
 }
 
+.footer_circle_button {
+    @include btn_circle;
+    @include btn_yellow;
+}
+
 /* -------- планшет --------*/
 
 @media (max-width: 1024px) {
@@ -159,7 +164,7 @@
         padding: 10rem 0;
     }
 
-    .text_top_content p  {
+    .text_top_content p {
         @include txt_body_14;
     }
 
@@ -180,7 +185,7 @@
 
     .nav-links {
         justify-content: center;
-        margin-bottom: 5rem
+        margin-bottom: 5rem;
     }
 
     .nav-links a {
@@ -197,7 +202,3 @@
         margin: 15rem 0 10rem 0;
     }
 }
-
-
-
-
