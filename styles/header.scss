@@ -1,4 +1,7 @@
 @import 'design_system';
+body {
+    overflow-x: hidden;
+}
 
 .post_button_heder {
     @include btn_size_48;
@@ -76,7 +79,7 @@
     }
 
     .mobile_navbar {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: fixed;
         display: flex;
