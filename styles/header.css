@@ -96,18 +96,41 @@ body {
 }
 
 .nav_bar {
+  padding: 5rem 0;
   background-color: #1a1a1a;
-  height: 20.25rem;
-  border: 0.25rem #262626 solid;
+  border-top: 0.25rem #262626 solid;
+  border-bottom: 0.25rem #262626 solid;
 }
 
-.buttons_block {
+.navbar_wrapper {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .navbar_wrapper {
+    max-width: none;
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar_wrapper {
+    padding: 0 4rem;
+  }
+}
+
+.nav_bar_menu {
   display: flex;
-  gap: 4rem;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.taps_botton_home {
+.buttons_container {
+  display: flex;
+  gap: 6rem;
+}
+
+.current_button {
   box-sizing: border-box;
   height: 10rem;
   width: -moz-fit-content;
@@ -127,16 +150,16 @@ body {
   line-height: 150%;
   font-size: 3.5rem;
 }
-.taps_botton_home:hover {
+.current_button:hover {
   background-color: #262626;
   border: 0.25rem #666666 solid;
 }
-.taps_botton_home:active {
+.current_button:active {
   background-color: #404040;
   border: 0.25rem #595959 solid;
 }
 
-.taps_botton {
+.navbar_buttons {
   box-sizing: border-box;
   height: 10rem;
   width: -moz-fit-content;
@@ -154,51 +177,437 @@ body {
   line-height: 150%;
   font-size: 3.5rem;
   border-radius: 1.5rem;
-  padding: 2.5rem;
-  border: none;
 }
-.taps_botton:hover {
+.navbar_buttons:hover {
   color: #ffffff;
 }
-.taps_botton:active {
+.navbar_buttons:active {
   color: #cccccc;
 }
 
-.taps_botton_contact {
+.newsletter {
+  color: #7e7e81;
+  font-size: 3.25rem;
+}
+
+.contacts_button {
+  box-sizing: border-box;
+  height: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 3.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  border-radius: 1.5rem;
   background-color: #ffd11a;
   color: #141414;
   cursor: pointer;
+}
+.contacts_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.contacts_button svg {
+  color: #141414;
+}
+.contacts_button:hover {
+  background-color: #ffe066;
+  color: #cccccc;
+}
+.contacts_button:active {
+  background-color: #ffd633;
+  color: #b3b3b3;
+}
+
+.mobile_menu {
+  display: none;
+  width: 8.5rem;
+  height: 8.5rem;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+.mobile_menu svg {
+  fill: #ffffff;
+}
+.mobile_menu:hover {
+  color: #ffd11a;
+}
+.mobile_menu:hover svg {
+  fill: #ffd11a;
+}
+.mobile_menu:active {
+  color: #ffe066;
+}
+.mobile_menu:active svg {
+  fill: #ffe066;
+}
+
+@media (max-width: 640px) {
+  .nav_bar_menu > .buttons_container,
+  .nav_bar_menu > .contacts_button {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+  .mobile_navbar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 17rem 8rem;
+    box-sizing: border-box;
+    background-color: #141414;
+    z-index: 10;
+    top: 0;
+    right: 0;
+  }
+  .buttons_container {
+    flex-direction: column;
+    margin-left: 4rem;
+  }
+  .buttons_container > .current_button {
+    margin-left: -4rem;
+  }
+  .close_button {
+    position: absolute;
+    top: 17rem;
+    right: 8rem;
+    width: 8.5rem;
+    height: 8.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .close_button svg {
+    fill: #ffffff;
+  }
+  .close_button:hover {
+    color: #ffd11a;
+  }
+  .close_button:hover svg {
+    fill: #ffd11a;
+  }
+  .close_button:active {
+    color: #ffe066;
+  }
+  .close_button:active svg {
+    fill: #ffe066;
+  }
+}
+:root {
+  /* ----------- Константы ----------- */
+  font-size: 4px;
+  letter-spacing: -0.03rem;
+  font-family: "Inter", serif;
+}
+
+/* ----------- Цвета ----------- */
+/* ----------- Стили шрифтов ----------- */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.eot");
+  src: local("Kumbh Sans Regular"), local("KumbhSans-Regular"), url("../fonts/KumbhSans-Regular.woff2") format("woff2"), url("../fonts/KumbhSans-Regular.woff") format("woff"), url("../fonts/KumbhSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot");
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../fonts/Inter-Medium.eot");
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Заголовки, на макете шрифты Kumbh */
+/* Жирные цифры */
+/* Мелкие заголовки, на макете шрифт Inter Medium */
+/* на макете шрифт Inter Regular */
+/* ----------- Размеры отступов, паддингов ----------- */
+/* ----------- Ограничения ширин, шаблоны для @media ----------- */
+/* ----------- Кнопки и ссылки ----------- */
+/* разные настройки размеров кнопок */
+/* разные цвета и стили кнопок */
+/* ----------- Контейнеры-карточки ----------- */
+body {
+  background-color: #141414;
+}
+
+.post_button_heder {
+  box-sizing: border-box;
+  height: 12rem;
+  padding: 3.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  background-color: #141414;
+  color: #98989a;
+  border: 0.25rem #262626 solid;
+  cursor: pointer;
   border: none;
-  border-radius: 1.5rem;
-  padding: 2.5rem 3.5rem;
+}
+.post_button_heder .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.post_button_heder svg {
+  color: #ffd11a;
+}
+.post_button_heder:hover {
+  background-color: #262626;
+  color: #cccccc;
+  border: 0.25rem #404040 solid;
+}
+.post_button_heder:hover svg {
+  color: #ffe066;
+}
+.post_button_heder:active {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  border: 0.25rem #333333 solid;
+}
+.post_button_heder:active svg {
+  color: #ffd633;
+}
+.post_button_heder:hover {
+  background-color: #141414;
+  border: none;
+}
+.post_button_heder:active {
+  background-color: #141414;
+  border: none;
+}
+
+.nav_bar {
+  padding: 5rem 0;
+  background-color: #1a1a1a;
+  border-top: 0.25rem #262626 solid;
+  border-bottom: 0.25rem #262626 solid;
+}
+
+.navbar_wrapper {
+  max-width: 344rem;
+  padding: 0 12rem;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .navbar_wrapper {
+    max-width: none;
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar_wrapper {
+    padding: 0 4rem;
+  }
+}
+
+.nav_bar_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons_container {
+  display: flex;
+  gap: 6rem;
+}
+
+.current_button {
+  box-sizing: border-box;
+  height: 10rem;
   width: -moz-fit-content;
   width: fit-content;
-  color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 3.5rem;
+  border-radius: 1.5rem;
+  background-color: #141414;
+  color: #ffffff;
+  border: 0.25rem #4d4d4d solid;
   /* служебный миксин, его использовать не надо */
   font-family: "Inter", serif;
   font-weight: 400;
   line-height: 150%;
   font-size: 3.5rem;
 }
-.taps_botton_contact svg {
+.current_button:hover {
+  background-color: #262626;
+  border: 0.25rem #666666 solid;
+}
+.current_button:active {
+  background-color: #404040;
+  border: 0.25rem #595959 solid;
+}
+
+.navbar_buttons {
+  box-sizing: border-box;
+  height: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 0rem;
+  background-color: transparent;
+  color: #7e7e81;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  border-radius: 1.5rem;
+}
+.navbar_buttons:hover {
+  color: #ffffff;
+}
+.navbar_buttons:active {
+  color: #cccccc;
+}
+
+.newsletter {
+  color: #7e7e81;
+  font-size: 3.25rem;
+}
+
+.contacts_button {
+  box-sizing: border-box;
+  height: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 3.5rem;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  border-radius: 1.5rem;
+  background-color: #ffd11a;
+  color: #141414;
+  cursor: pointer;
+}
+.contacts_button .icon {
+  width: 5rem;
+  height: 5rem;
+}
+.contacts_button svg {
   color: #141414;
 }
-.taps_botton_contact:hover {
+.contacts_button:hover {
   background-color: #ffe066;
   color: #cccccc;
 }
-.taps_botton_contact:active {
+.contacts_button:active {
   background-color: #ffd633;
   color: #b3b3b3;
 }
 
-.icon_future_tech {
-  margin: 4.25rem;
+.mobile_menu {
+  display: none;
+  width: 8.5rem;
+  height: 8.5rem;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+.mobile_menu svg {
+  fill: #ffffff;
+}
+.mobile_menu:hover {
+  color: #ffd11a;
+}
+.mobile_menu:hover svg {
+  fill: #ffd11a;
+}
+.mobile_menu:active {
+  color: #ffe066;
+}
+.mobile_menu:active svg {
+  fill: #ffe066;
 }
 
-.nav_bar_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5rem 0;
+@media (max-width: 640px) {
+  .nav_bar_menu > .buttons_container,
+  .nav_bar_menu > .contacts_button {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+  .mobile_navbar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 17rem 8rem;
+    box-sizing: border-box;
+    background-color: #141414;
+    z-index: 10;
+    top: 0;
+    right: 0;
+  }
+  .buttons_container {
+    flex-direction: column;
+    margin-left: 4rem;
+  }
+  .buttons_container > .current_button {
+    margin-left: -4rem;
+  }
+  .close_button {
+    position: absolute;
+    top: 17rem;
+    right: 8rem;
+    width: 8.5rem;
+    height: 8.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .close_button svg {
+    fill: #ffffff;
+  }
+  .close_button:hover {
+    color: #ffd11a;
+  }
+  .close_button:hover svg {
+    fill: #ffd11a;
+  }
+  .close_button:active {
+    color: #ffe066;
+  }
+  .close_button:active svg {
+    fill: #ffe066;
+  }
 }/*# sourceMappingURL=header.css.map */

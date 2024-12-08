@@ -1,65 +1,213 @@
 @import 'design_system';
 
-// ссылка для подписки на новости
 .post_button_heder {
-   @include btn_size_48;
-   @include btn_black;
-   border: none;
-   &:hover {
-    background-color: $Dark_08;
+    @include btn_size_48;
+    @include btn_black;
     border: none;
-   }
-   &:active {
-    background-color: $Dark_08;
-    border: none;
-   }
+    &:hover {
+        background-color: $Dark_08;
+        border: none;
+    }
+    &:active {
+        background-color: $Dark_08;
+        border: none;
+    }
 }
-
-// секция с кнопками навигации
 
 .nav_bar {
+    padding: 5rem 0;
     background-color: $Dark_10;
-    height: 20.25rem;
-    border: $Border;
+    border-top: $Border;
+    border-bottom: $Border;
 }
 
-// кнопки навигации
+.navbar_wrapper {
+    @include container;
+}
 
-.buttons_block {
+.nav_bar_menu {
     display: flex;
-    gap: 4rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.taps_botton_home {
+.buttons_container {
+    display: flex;
+    gap: 6rem;
+}
+
+.current_button {
     @include btn_navbar_current;
 }
 
-.taps_botton {
+.navbar_buttons {
     @include btn_navbar;
-    padding: 2.5rem;
-    border: none;
 }
 
-.taps_botton_contact {
+.newsletter {
+    color: $Grey_50;
+    font-size: 3.25rem;
+}
+
+.contacts_button {
+    @include btn_size_40;
     @include btn_yellow;
+}
+
+.mobile_menu {
+    display: none;
+    width: 8.5rem;
+    height: 8.5rem;
+    @include btn_white;
+}
+
+@media (max-width: 640px) {
+    .nav_bar_menu > .buttons_container,
+    .nav_bar_menu > .contacts_button {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .mobile_navbar {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        padding: 17rem 8rem;
+        box-sizing: border-box;
+        background-color: $Dark_08;
+        z-index: 10;
+        top: 0;
+        right: 0;
+    }
+
+    .buttons_container {
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+
+    .buttons_container > .current_button {
+        margin-left: -4rem;
+    }
+
+    .close_button {
+        position: absolute;
+        top: 17rem;
+        right: 8rem;
+        width: 8.5rem;
+        height: 8.5rem;
+        @include btn_white;
+    }
+}
+
+@import 'design_system';
+
+.post_button_heder {
+    @include btn_size_48;
+    @include btn_black;
     border: none;
-    border-radius: 1.5rem;
-    padding: 2.5rem 3.5rem;
-    width: fit-content;
-    color: $Dark_08;
-    @include txt_body_14;
+    &:hover {
+        background-color: $Dark_08;
+        border: none;
+    }
+    &:active {
+        background-color: $Dark_08;
+        border: none;
+    }
 }
 
-// логотип 
-
-.icon_future_tech {
-    margin: 4.25rem;
+.nav_bar {
+    padding: 5rem 0;
+    background-color: $Dark_10;
+    border-top: $Border;
+    border-bottom: $Border;
 }
 
-.nav_bar_title {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 5rem 0;
+.navbar_wrapper {
+    @include container;
+}
+
+.nav_bar_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons_container {
+    display: flex;
+    gap: 6rem;
+}
+
+.current_button {
+    @include btn_navbar_current;
+}
+
+.navbar_buttons {
+    @include btn_navbar;
+}
+
+.newsletter {
+    color: $Grey_50;
+    font-size: 3.25rem;
+}
+
+.contacts_button {
+    @include btn_size_40;
+    @include btn_yellow;
+}
+
+.mobile_menu {
+    display: none;
+    width: 8.5rem;
+    height: 8.5rem;
+    @include btn_white;
+}
+
+@media (max-width: 640px) {
+    .nav_bar_menu > .buttons_container,
+    .nav_bar_menu > .contacts_button {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .mobile_navbar {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        padding: 17rem 8rem;
+        box-sizing: border-box;
+        background-color: $Dark_08;
+        z-index: 10;
+        top: 0;
+        right: 0;
+    }
+
+    .buttons_container {
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+
+    .buttons_container > .current_button {
+        margin-left: -4rem;
+    }
+
+    .close_button {
+        position: absolute;
+        top: 17rem;
+        right: 8rem;
+        width: 8.5rem;
+        height: 8.5rem;
+        @include btn_white;
+    }
 }
