@@ -43,161 +43,6 @@ body {
   background-color: #141414;
 }
 
-.newsletter {
-  color: #7e7e81;
-  font-size: 3.25rem;
-}
-
-.tap_btn_home {
-  box-sizing: border-box;
-  height: 10rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2.5rem 3.5rem;
-  border-radius: 1.5rem;
-  background-color: #141414;
-  color: #ffffff;
-  border: 0.25rem #4d4d4d solid;
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 400;
-  line-height: 150%;
-  font-size: 3.5rem;
-}
-.tap_btn_home:hover {
-  background-color: #262626;
-  border: 0.25rem #666666 solid;
-}
-.tap_btn_home:active {
-  background-color: #404040;
-  border: 0.25rem #595959 solid;
-}
-
-.tap_btn_news {
-  box-sizing: border-box;
-  height: 10rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2.5rem 0rem;
-  background-color: transparent;
-  color: #7e7e81;
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 400;
-  line-height: 150%;
-  font-size: 3.5rem;
-  border-radius: 1.5rem;
-}
-.tap_btn_news:hover {
-  color: #ffffff;
-}
-.tap_btn_news:active {
-  color: #cccccc;
-}
-
-.tap_btn_pdc {
-  box-sizing: border-box;
-  height: 10rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2.5rem 0rem;
-  background-color: transparent;
-  color: #7e7e81;
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 400;
-  line-height: 150%;
-  font-size: 3.5rem;
-  border-radius: 1.5rem;
-}
-.tap_btn_pdc:hover {
-  color: #ffffff;
-}
-.tap_btn_pdc:active {
-  color: #cccccc;
-}
-
-.tap_btn_blg {
-  box-sizing: border-box;
-  height: 10rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2.5rem 0rem;
-  background-color: transparent;
-  color: #7e7e81;
-  /* служебный миксин, его использовать не надо */
-  font-family: "Inter", serif;
-  font-weight: 400;
-  line-height: 150%;
-  font-size: 3.5rem;
-  border-radius: 1.5rem;
-}
-.tap_btn_blg:hover {
-  color: #ffffff;
-}
-.tap_btn_blg:active {
-  color: #cccccc;
-}
-
-.tap_btn_cnt {
-  background-color: #ffd11a;
-  color: #141414;
-  cursor: pointer;
-}
-.tap_btn_cnt svg {
-  color: #141414;
-}
-.tap_btn_cnt:hover {
-  background-color: #ffe066;
-  color: #cccccc;
-}
-.tap_btn_cnt:active {
-  background-color: #ffd633;
-  color: #b3b3b3;
-}
-
-.icon_heder {
-  background-color: #141414;
-  color: #98989a;
-  border: 0.25rem #262626 solid;
-  cursor: pointer;
-}
-.icon_heder svg {
-  color: #ffd11a;
-}
-.icon_heder:hover {
-  background-color: #262626;
-  color: #cccccc;
-  border: 0.25rem #404040 solid;
-}
-.icon_heder:hover svg {
-  color: #ffe066;
-}
-.icon_heder:active {
-  background-color: #1a1a1a;
-  color: #b3b3b3;
-  border: 0.25rem #333333 solid;
-}
-.icon_heder:active svg {
-  color: #ffd633;
-}
-
 .post_button_heder {
   box-sizing: border-box;
   height: 12rem;
@@ -254,4 +99,106 @@ body {
   background-color: #1a1a1a;
   height: 20.25rem;
   border: 0.25rem #262626 solid;
+}
+
+.buttons_block {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.taps_botton_home {
+  box-sizing: border-box;
+  height: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 3.5rem;
+  border-radius: 1.5rem;
+  background-color: #141414;
+  color: #ffffff;
+  border: 0.25rem #4d4d4d solid;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+}
+.taps_botton_home:hover {
+  background-color: #262626;
+  border: 0.25rem #666666 solid;
+}
+.taps_botton_home:active {
+  background-color: #404040;
+  border: 0.25rem #595959 solid;
+}
+
+.taps_botton {
+  box-sizing: border-box;
+  height: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 0rem;
+  background-color: transparent;
+  color: #7e7e81;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: none;
+}
+.taps_botton:hover {
+  color: #ffffff;
+}
+.taps_botton:active {
+  color: #cccccc;
+}
+
+.taps_botton_contact {
+  background-color: #ffd11a;
+  color: #141414;
+  cursor: pointer;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2.5rem 3.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #141414;
+  /* служебный миксин, его использовать не надо */
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 3.5rem;
+}
+.taps_botton_contact svg {
+  color: #141414;
+}
+.taps_botton_contact:hover {
+  background-color: #ffe066;
+  color: #cccccc;
+}
+.taps_botton_contact:active {
+  background-color: #ffd633;
+  color: #b3b3b3;
+}
+
+.icon_future_tech {
+  margin: 4.25rem;
+}
+
+.nav_bar_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
 }/*# sourceMappingURL=header.css.map */

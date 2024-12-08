@@ -1,34 +1,6 @@
 @import 'design_system';
 
-.newsletter {
-    color: $Grey_50;
-    font-size: 3.25rem;
-}
-
-.tap_btn_home {
-   @include btn_navbar_current;
-}
-
-.tap_btn_news {
-    @include btn_navbar;
-}
-
-.tap_btn_pdc {
-    @include btn_navbar;
-}
-
-.tap_btn_blg {
-    @include btn_navbar;
-}
-
-.tap_btn_cnt {
-    @include btn_yellow;
-}
-
-.icon_heder {
-    @include btn_black;
-}
-
+// ссылка для подписки на новости
 .post_button_heder {
    @include btn_size_48;
    @include btn_black;
@@ -43,8 +15,51 @@
    }
 }
 
+// секция с кнопками навигации
+
 .nav_bar {
     background-color: $Dark_10;
     height: 20.25rem;
     border: $Border;
+}
+
+// кнопки навигации
+
+.buttons_block {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.taps_botton_home {
+    @include btn_navbar_current;
+}
+
+.taps_botton {
+    @include btn_navbar;
+    padding: 2.5rem;
+    border: none;
+}
+
+.taps_botton_contact {
+    @include btn_yellow;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2.5rem 3.5rem;
+    width: fit-content;
+    color: $Dark_08;
+    @include txt_body_14;
+}
+
+// логотип 
+
+.icon_future_tech {
+    margin: 4.25rem;
+}
+
+.nav_bar_title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5rem 0;
 }
