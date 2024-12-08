@@ -1,1011 +1,892 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script
-            src="https://kit.fontawesome.com/362708026e.js"
-            crossorigin="anonymous"
-        ></script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>News</title>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/362708026e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
 
-        <link
-            rel="shortcut icon"
-            href="./assets/icons/Icon_FT_blog.svg"
-            type="image/svg"
-        />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/Logo.svg"
+      type="image/svg"
+    />
 
-        <!--подключаем шрифты -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
+    <!--подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--подключаем CSS-->
-        <link rel="stylesheet" href="../styles/reset.css" />
-        <link rel="stylesheet" href="../styles/normalize.css" />
-        <link rel="stylesheet" href="../styles/design_system.css" />
-        <link rel="stylesheet" href="../styles/section_top.css" />
-        <link rel="stylesheet" href="../styles/header.css" />
-        <link rel="stylesheet" href="../styles/page_name.css" />
-        <link rel="stylesheet" href="../styles/news_hero_section.css" />
-        <link
-            rel="stylesheet"
-            href="../styles/future_tech_in_depth_section.css"
-        />
-        <link rel="stylesheet" href="../styles/featured_videos.css" />
-        <link rel="stylesheet" href="../styles/footer.css" />
-    </head>
-    <body>
-        <header>
-            <div class="subscribe_title">
-                <a class="post_button_heder" href="">
-                    Subscribe to our Newsletter For New & latest Blogs and
-                    Resources
-                    <svg class="icon">
-                        <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
-                    </svg>
-                </a>
+    <!--подключаем CSS-->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/design_system.css" />
+    <link rel="stylesheet" href="../styles/section_top.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/page_name.css" />
+    <link rel="stylesheet" href="../styles/news_hero_section.css" />
+    <link rel="stylesheet" href="../styles/future_tech_in_depth_section.css" />
+    <link rel="stylesheet" href="../styles/featured_videos.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="subscribe_title">
+        <a class="post_button_heder" href="">
+          Subscribe to our Newsletter For New & latest Blogs and Resources
+          <svg class="icon">
+            <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      <section class="nav_bar">
+        <div class="navbar_wrapper">
+          <nav class="nav_bar_menu">
+            <a href="../index.html" class="logo_future_tech">
+              <img
+                class="icon_future_tech"
+                src="../assets/icons/icon_logo_heder.svg"
+                alt="логотип"
+              />
+            </a>
+
+            <div class="buttons_container">
+              <a class="navbar_buttons" href="../index.html"> Home </a>
+              <a class="current_button" href="../pages/news.html"> News </a>
+              <a class="navbar_buttons" href=""> Podcasts </a>
+              <a class="navbar_buttons" href=""> Blog </a>
             </div>
-            <section class="nav_bar">
-                <div class="navbar_wrapper">
-                    <nav class="nav_bar_menu">
-                        <a href="../index.html" class="logo_future_tech">
-                            <img
-                                class="icon_future_tech"
-                                src="../assets/icons/icon_logo_heder.svg"
-                                alt="логотип"
-                            />
-                        </a>
+            <a class="contacts_button" href=""> Contact Us </a>
+            <button class="mobile_menu">
+              <svg>
+                <use href="../assets/icons/Icon_menu.svg#menu"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </section>
+      <nav class="mobile_navbar">
+        <a href="../index.html" class="logo_future_tech">
+          <img
+            class="icon_future_tech"
+            src="../assets/icons/icon_logo_heder.svg"
+            alt="логотип"
+          />
+        </a>
 
-                        <div class="buttons_container">
-                            <a class="navbar_buttons" href="../index.html">
-                                Home
-                            </a>
-                            <a class="current_button" href="../pages/news.html">
-                                News
-                            </a>
-                            <a class="navbar_buttons" href=""> Podcasts </a>
-                            <a class="navbar_buttons" href=""> Blog </a>
-                        </div>
-                        <a class="contacts_button" href=""> Contact Us </a>
-                        <button class="mobile_menu">
-                            <svg>
-                                <use
-                                    href="../assets/icons/Icon_menu.svg#menu"
-                                ></use>
-                            </svg>
-                        </button>
-                    </nav>
-                </div>
-            </section>
-            <nav class="mobile_navbar">
-                <a href="../index.html" class="logo_future_tech">
-                    <img
-                        class="icon_future_tech"
-                        src="../assets/icons/icon_logo_heder.svg"
-                        alt="логотип"
-                    />
-                </a>
-
-                <div class="buttons_container">
-                    <a class="navbar_buttons" href="../index.html"> Home </a>
-                    <a class="current_button" href="../pages/news.html">
-                        News
-                    </a>
-                    <a class="navbar_buttons" href=""> Podcasts </a>
-                    <a class="navbar_buttons" href=""> Blog </a>
-                </div>
-                <a class="contacts_button" href=""> Contact Us </a>
-                <button class="close_button">
-                    <svg>
-                        <use href="../assets/icons/Icon_close.svg#close"></use>
-                    </svg>
+        <div class="buttons_container">
+          <a class="navbar_buttons" href="../index.html"> Home </a>
+          <a class="current_button" href="../pages/news.html"> News </a>
+          <a class="navbar_buttons" href=""> Podcasts </a>
+          <a class="navbar_buttons" href=""> Blog </a>
+        </div>
+        <a class="contacts_button" href=""> Contact Us </a>
+        <button class="close_button">
+          <svg>
+            <use href="../assets/icons/Icon_close.svg#close"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <section class="page_name">
+      <div class="desctop_page_name_wrapper">
+        <div class="name_first_line">Today's Headlines: Stay</div>
+        <div class="name_second_line">
+          Informed
+          <div class="page_name_description">
+            Explore the latest news from around the world. We bring you
+            up-to-the-minute updates on the most significant events, trends, and
+            stories. Discover the world through our news coverage.
+          </div>
+        </div>
+      </div>
+      <div class="mobile_page_name_wrapper">
+        Today's Headlines: Stay Informed
+        <div class="page_name_description">
+          Explore the latest news from around the world. We bring you
+          up-to-the-minute updates on the most significant events, trends, and
+          stories. Discover the world through our news coverage.
+        </div>
+      </div>
+    </section>
+    <section class="news_hero_section">
+      <article class="main_news_line">
+        <div class="wrapper">
+          <div>
+            <div class="news_cover"></div>
+          </div>
+          <div class="main_news_content">
+            <div class="main_news_title">
+              Global Climate Summit Addresses Urgent Climate Action
+              <div class="main_news_title_description">
+                World leaders gathered at the Global Climate Summit to discuss
+                urgent climate action, emissions reductions, and renewable
+                energy targets.
+              </div>
+            </div>
+            <div class="main_news_parametrs">
+              <div class="main_news_parametr">
+                Category
+                <div class="main_news_parametr_value">Environment</div>
+              </div>
+              <div class="main_news_parametr">
+                Publication Date
+                <div class="main_news_parametr_value">October 10, 2023</div>
+              </div>
+              <div class="main_news_parametr">
+                Author
+                <div class="main_news_parametr_value">Jane Smith</div>
+              </div>
+            </div>
+            <div class="main_news_buttons">
+              <div class="blogpost_social_buttons">
+                <button
+                  class="favorites_btn"
+                  id="fav1"
+                  onclick="this.classList.toggle('active')"
+                >
+                  <svg class="icon">
+                    <use
+                      href="../assets/icons/Icon_favorites.svg#favorites"
+                    ></use>
+                  </svg>
+                  14k
                 </button>
-            </nav>
-        </header>
-        <section class="page_name">
-            <div class="desctop_page_name_wrapper">
-                <div class="name_first_line">Today's Headlines: Stay</div>
-                <div class="name_second_line">
-                    Informed
-                    <div class="page_name_description">
-                        Explore the latest news from around the world. We bring
-                        you up-to-the-minute updates on the most significant
-                        events, trends, and stories. Discover the world through
-                        our news coverage.
-                    </div>
-                </div>
+                <button class="chat_btn" role="button">
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                  </svg>
+                  24
+                </button>
+              </div>
+              <a class="read_more_btn" href="">Read More</a>
             </div>
-            <div class="mobile_page_name_wrapper">
-                Today's Headlines: Stay Informed
-                <div class="page_name_description">
-                    Explore the latest news from around the world. We bring you
-                    up-to-the-minute updates on the most significant events,
-                    trends, and stories. Discover the world through our news
-                    coverage.
-                </div>
+          </div>
+        </div>
+      </article>
+      <div class="second_news_line">
+        <div class="news_grid">
+          <article class="small_news_preview">
+            <div>
+              <div class="news_cover_small" id="news_1"></div>
             </div>
-        </section>
-        <section class="news_hero_section">
-            <article class="main_news_line">
-                <div class="wrapper">
-                    <div>
-                        <div class="news_cover"></div>
-                    </div>
-                    <div class="main_news_content">
-                        <div class="main_news_title">
-                            Global Climate Summit Addresses Urgent Climate
-                            Action
-                            <div class="main_news_title_description">
-                                World leaders gathered at the Global Climate
-                                Summit to discuss urgent climate action,
-                                emissions reductions, and renewable energy
-                                targets.
-                            </div>
-                        </div>
-                        <div class="main_news_parametrs">
-                            <div class="main_news_parametr">
-                                Category
-                                <div class="main_news_parametr_value">
-                                    Environment
-                                </div>
-                            </div>
-                            <div class="main_news_parametr">
-                                Publication Date
-                                <div class="main_news_parametr_value">
-                                    October 10, 2023
-                                </div>
-                            </div>
-                            <div class="main_news_parametr">
-                                Author
-                                <div class="main_news_parametr_value">
-                                    Jane Smith
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main_news_buttons">
-                            <div class="blogpost_social_buttons">
-                                <button
-                                    class="favorites_btn"
-                                    id="fav1"
-                                    onclick="this.classList.toggle('active')"
-                                >
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_favorites.svg#favorites"
-                                        ></use>
-                                    </svg>
-                                    14k
-                                </button>
-                                <button class="chat_btn" role="button">
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_chat.svg#chat"
-                                        ></use>
-                                    </svg>
-                                    24
-                                </button>
-                            </div>
-                            <a class="read_more_btn" href="">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <div class="second_news_line">
-                <div class="news_grid">
-                    <article class="small_news_preview">
-                        <div>
-                            <div class="news_cover_small" id="news_1"></div>
-                        </div>
-                        <div class="news_cover_content">
-                            A Decisive Victory for Progressive Policies
-                            <div class="news_cover_content_theme">Politics</div>
-                        </div>
-                        <div class="small_news_cover_buttons">
-                            <div class="blogpost_social_buttons">
-                                <button
-                                    class="favorites_btn"
-                                    id="fav2"
-                                    onclick="this.classList.toggle('active')"
-                                >
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_favorites.svg#favorites"
-                                        ></use>
-                                    </svg>
-                                    2.2k
-                                </button>
-                                <button class="chat_btn" role="button">
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_chat.svg#chat"
-                                        ></use>
-                                    </svg>
-                                    60
-                                </button>
-                            </div>
-                            <a class="read_more_btn_with_arrow" href=""
-                                >Read More
-                                <svg class="icon">
-                                    <use
-                                        href="../assets/icons/Icon_arrow.svg#arrow"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="small_news_preview">
-                        <div>
-                            <div class="news_cover_small" id="news_2"></div>
-                        </div>
-                        <div class="news_cover_content">
-                            Tech Giants Unveil Cutting-Edge AI Innovations
-                            <div class="news_cover_content_theme">
-                                Technology
-                            </div>
-                        </div>
-                        <div class="small_news_cover_buttons">
-                            <div class="blogpost_social_buttons">
-                                <button
-                                    class="favorites_btn"
-                                    id="fav3"
-                                    onclick="this.classList.toggle('active')"
-                                >
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_favorites.svg#favorites"
-                                        ></use>
-                                    </svg>
-                                    6k
-                                </button>
-                                <button class="chat_btn" role="button">
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_chat.svg#chat"
-                                        ></use>
-                                    </svg>
-                                    20
-                                </button>
-                            </div>
-                            <a class="read_more_btn_with_arrow" href=""
-                                >Read More
-                                <svg class="icon">
-                                    <use
-                                        href="../assets/icons/Icon_arrow.svg#arrow"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="small_news_preview">
-                        <div>
-                            <div class="news_cover_small" id="news_3"></div>
-                        </div>
-                        <div class="news_cover_content">
-                            COVID-19 Variants
-                            <div class="news_cover_content_theme">Health</div>
-                        </div>
-                        <div class="small_news_cover_buttons">
-                            <div class="blogpost_social_buttons">
-                                <button
-                                    class="favorites_btn"
-                                    id="fav4"
-                                    onclick="this.classList.toggle('active')"
-                                >
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_favorites.svg#favorites"
-                                        ></use>
-                                    </svg>
-                                    10k
-                                </button>
-                                <button class="chat_btn" role="button">
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_chat.svg#chat"
-                                        ></use>
-                                    </svg>
-                                    124
-                                </button>
-                            </div>
-                            <a class="read_more_btn_with_arrow" href=""
-                                >Read More
-                                <svg class="icon">
-                                    <use
-                                        href="../assets/icons/Icon_arrow.svg#arrow"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-                </div>
+            <div class="news_cover_content">
+              A Decisive Victory for Progressive Policies
+              <div class="news_cover_content_theme">Politics</div>
             </div>
-        </section>
-        <section class="future_tech_in_depth_section">
-            <article class="section_top">
-                <div class="section_top_content">
-                    <div class="text_top_content">
-                        <div class="top_badge">Welcome to Our News Hub</div>
-                        <div class="top_title">
-                            Discover the World of Headlines
-                        </div>
-                    </div>
-                    <a class="text_top_button">
-                        View All News
-                        <svg class="icon">
-                            <use
-                                href="../assets/icons/Icon_arrow.svg#arrow"
-                            ></use>
-                        </svg>
-                    </a>
-                </div>
-            </article>
-            <article class="section">
-                <div class="tabs_content" role="tablist">
-                    <!--пока все кнопки будут смотреть на tavpanel-ALL-->
-                    <button
-                        class="tabs_button"
-                        type="button"
-                        role="tab"
-                        aria-selected="true"
-                        aria-controls="tabpanel_All"
-                        name="blog_tabs"
-                        id="tab_btn_all"
-                    >
-                        All
-                    </button>
-                    <button
-                        class="tabs_button"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tabpanel_All"
-                        name="blog_tabs"
-                        id="tab_btn_technology"
-                    >
-                        Technology
-                    </button>
-                    <button
-                        class="tabs_button"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tabpanel_All"
-                        name="blog_tabs"
-                        id="tab_btn_politics"
-                    >
-                        Politics
-                    </button>
-                    <button
-                        class="tabs_button"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tabpanel_All"
-                        name="blog_tabs"
-                        id="tab_btn_health"
-                    >
-                        Health
-                    </button>
-                    <button
-                        class="tabs_button"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tabpanel_All"
-                        name="blog_tabs"
-                        id="tab_btn_enviroment"
-                    >
-                        Environment
-                    </button>
-                    <button
-                        class="tabs_button"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        aria-controls="tabpanel_All"
-                        name="blog_tabs"
-                        id="tab_btn_sports"
-                    >
-                        Sports
-                    </button>
-                </div>
-            </article>
-            <div id="tabpanel_All">
-                <article class="section">
-                    <div class="container_for_blog">
-                        <div class="blogpost_wrapper">
-                            <div class="mobile-wrapper">
-                                <div class="blogpost_author">
-                                    <img
-                                        src="../assets/img/avatarts/avatar_men_yellow_shirt.png"
-                                        alt="John Techson"
-                                        class="blogpost_avatar"
-                                    />
-                                    <div class="author_name">
-                                        John Techson
-                                        <div class="blogpost_theme">
-                                            Quantum Computing
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="post_button" href="">
-                                    View Blog
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_arrow.svg#arrow"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="blogpost_preview">
-                                <div class="blogpost_date">
-                                    October 15, 2023
-                                </div>
-                                <div class="blogpost_name">
-                                    The Quantum Leap in Computing
-                                    <div class="blogpost_description">
-                                        Explore the revolution in quantum
-                                        computing, its applications, and its
-                                        potential impact on various industries.
-                                    </div>
-                                </div>
-                                <div class="blogpost_social_buttons">
-                                    <button
-                                        class="favorites_btn"
-                                        id="fav5"
-                                        onclick="this.classList.toggle('active')"
-                                    >
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_favorites.svg#favorites"
-                                            ></use>
-                                        </svg>
-                                        24.5k
-                                    </button>
-                                    <button class="chat_btn" role="button">
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_chat.svg#chat"
-                                            ></use>
-                                        </svg>
-                                        50
-                                    </button>
-                                    <button class="share_btn" role="button">
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_share.svg#share"
-                                            ></use>
-                                        </svg>
-                                        20
-                                    </button>
-                                </div>
-                            </div>
-                            <a class="post_button" href="">
-                                View Blog
-                                <svg class="icon">
-                                    <use
-                                        href="../assets/icons/Icon_arrow.svg#arrow"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="section">
-                    <div class="container_for_blog">
-                        <div class="blogpost_wrapper">
-                            <div class="mobile-wrapper">
-                                <div class="blogpost_author">
-                                    <img
-                                        src="../assets/img/avatarts/avatar_women_stripes.png"
-                                        alt="Sarah Ethicist"
-                                        class="blogpost_avatar"
-                                    />
-                                    <div class="author_name">
-                                        Sarah Ethicist
-                                        <div class="blogpost_theme">
-                                            AI Ethics
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="post_button" href="">
-                                    View Blog
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_arrow.svg#arrow"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="blogpost_preview">
-                                <div class="blogpost_date">
-                                    November 5, 2023
-                                </div>
-                                <div class="blogpost_name">
-                                    The Ethical Dilemmas of AI
-                                    <div class="blogpost_description">
-                                        A deep dive into ethical challenges
-                                        posed by AI, including bias, privacy,
-                                        and transparency.
-                                    </div>
-                                </div>
-                                <div class="blogpost_social_buttons">
-                                    <button
-                                        class="favorites_btn"
-                                        id="fav6"
-                                        onclick="this.classList.toggle('active')"
-                                    >
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_favorites.svg#favorites"
-                                            ></use>
-                                        </svg>
-                                        32k
-                                    </button>
-                                    <button class="chat_btn" role="button">
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_chat.svg#chat"
-                                            ></use>
-                                        </svg>
-                                        72
-                                    </button>
-                                    <button class="share_btn" role="button">
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_share.svg#share"
-                                            ></use>
-                                        </svg>
-                                        18
-                                    </button>
-                                </div>
-                            </div>
-                            <a class="post_button" href="">
-                                View Blog
-                                <svg class="icon">
-                                    <use
-                                        href="../assets/icons/Icon_arrow.svg#arrow"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="section">
-                    <div class="container_for_blog">
-                        <div class="blogpost_wrapper">
-                            <div class="mobile-wrapper">
-                                <div class="blogpost_author">
-                                    <img
-                                        src="../assets/img/avatarts/avatar_men_black_shirt.png"
-                                        alt="Astronomer X"
-                                        class="blogpost_avatar"
-                                    />
-                                    <div class="author_name">
-                                        Astronomer X
-                                        <div class="blogpost_theme">
-                                            Space Exploration
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="post_button" href="">
-                                    View Blog
-                                    <svg class="icon">
-                                        <use
-                                            href="../assets/icons/Icon_arrow.svg#arrow"
-                                        ></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="blogpost_preview">
-                                <div class="blogpost_date">
-                                    December 10, 2023
-                                </div>
-                                <div class="blogpost_name">
-                                    The Mars Colonization Challenge
-                                    <div class="blogpost_description">
-                                        Exploring the technical and logistical
-                                        challenges of human colonization on
-                                        Mars.
-                                    </div>
-                                </div>
-                                <div class="blogpost_social_buttons">
-                                    <button
-                                        class="favorites_btn"
-                                        id="fav7"
-                                        onclick="this.classList.toggle('active')"
-                                    >
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_favorites.svg#favorites"
-                                            ></use>
-                                        </svg>
-                                        31k
-                                    </button>
-                                    <button class="chat_btn" role="button">
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_chat.svg#chat"
-                                            ></use>
-                                        </svg>
-                                        20
-                                    </button>
-                                    <button class="share_btn" role="button">
-                                        <svg class="icon">
-                                            <use
-                                                href="../assets/icons/Icon_share.svg#share"
-                                            ></use>
-                                        </svg>
-                                        12
-                                    </button>
-                                </div>
-                            </div>
-                            <a class="post_button" href="">
-                                View Blog
-                                <svg class="icon">
-                                    <use
-                                        href="../assets/icons/Icon_arrow.svg#arrow"
-                                    ></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+            <div class="small_news_cover_buttons">
+              <div class="blogpost_social_buttons">
+                <button
+                  class="favorites_btn"
+                  id="fav2"
+                  onclick="this.classList.toggle('active')"
+                >
+                  <svg class="icon">
+                    <use
+                      href="../assets/icons/Icon_favorites.svg#favorites"
+                    ></use>
+                  </svg>
+                  2.2k
+                </button>
+                <button class="chat_btn" role="button">
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                  </svg>
+                  60
+                </button>
+              </div>
+              <a class="read_more_btn_with_arrow" href=""
+                >Read More
+                <svg class="icon">
+                  <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
-        </section>
-        <section class="featured_videos">
-            <article class="section_top">
-                <div class="section_top_content">
-                    <div class="text_top_content">
-                        <div class="top_badge">Featured Videos</div>
-                        <div class="top_title">
-                            Visual Insights for the Modern Viewer
-                        </div>
-                    </div>
-                    <a class="text_top_button">
-                        View All
-                        <svg class="icon">
-                            <use
-                                href="../assets/icons/Icon_arrow.svg#arrow"
-                            ></use>
-                        </svg>
-                    </a>
-                </div>
-            </article>
-            <div class="video_row_wrapper">
-                <div class="video_row_container">
-                    <article class="video_container">
-                        <div class="video_wrapper">
-                            <video
-                                muted
-                                loop
-                                id="video_1"
-                                class="video_source"
-                                onmouseover="this.play()"
-                                onmouseout="this.pause()"
-                                onclick="openInNewTab(this)"
-                            >
-                                <source
-                                    src="../assets/video/clip_made_with_ai.mp4"
-                                />
-                            </video>
-                            <div class="video_content">
-                                <a
-                                    href="../assets/video/clip_made_with_ai.mp4"
-                                    target="_blank"
-                                    class="play_btn"
-                                    onmouseover="video_1.play()"
-                                    onmouseout="video_1.pause()"
-                                >
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_play.svg#play"
-                                        ></use>
-                                    </svg>
-                                </a>
-                                00:37
-                            </div>
-                        </div>
-                        <div class="video_description">
-                            AI Evolution - Created Only by Generative AI
-                            <div class="video_subtitle">
-                                Used only AI tools to make this music video.
-                                None of the people are real. This video is
-                                unofficial☝️
-                            </div>
-                        </div>
-                    </article>
-                    <article class="video_container">
-                        <div class="video_wrapper">
-                            <video
-                                muted
-                                loop
-                                id="video_2"
-                                class="video_source"
-                                onmouseover="this.play()"
-                                onmouseout="this.pause()"
-                                onclick="openInNewTab(this)"
-                            >
-                                <source src="../assets/video/gen-3_ai.mp4" />
-                            </video>
-                            <div class="video_content">
-                                <a
-                                    href="../assets/video/gen-3_ai.mp4"
-                                    target="_blank"
-                                    class="play_btn"
-                                    onmouseover="video_2.play()"
-                                    onmouseout="video_2.pause()"
-                                >
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_play.svg#play"
-                                        ></use>
-                                    </svg>
-                                </a>
-                                01:21
-                            </div>
-                        </div>
-                        <div class="video_description">
-                            Introducing Act-One | Runway
-                            <div class="video_subtitle">
-                                Introducing, Act-One. A new way to generate
-                                expressive character performances inside Gen-3
-                                Alpha using a single driving video and character
-                                image. No motion capture or rigging required.
-                            </div>
-                        </div>
-                    </article>
-                </div>
+          </article>
+          <article class="small_news_preview">
+            <div>
+              <div class="news_cover_small" id="news_2"></div>
             </div>
-            <div class="video_row_wrapper">
-                <div class="video_row_container">
-                    <article class="video_container">
-                        <div class="video_wrapper">
-                            <video
-                                muted
-                                loop
-                                id="video_3"
-                                class="video_source"
-                                onmouseover="this.play()"
-                                onmouseout="this.pause()"
-                                onclick="openInNewTab(this)"
-                            >
-                                <source src="../assets/video/Luma_ai.mp4" />
-                            </video>
-                            <div class="video_content">
-                                <a
-                                    href="../assets/video/Luma_ai.mp4"
-                                    target="_blank"
-                                    class="play_btn"
-                                    onmouseover="video_3.play()"
-                                    onmouseout="video_3.pause()"
-                                >
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_play.svg#play"
-                                        ></use>
-                                    </svg>
-                                </a>
-                                01:18
-                            </div>
-                        </div>
-                        <div class="video_description">
-                            Luma AI Dream Machine
-                            <div class="video_subtitle">
-                                Forget Kling and Sora, there is a new kid on the
-                                block Luma Labs AI Dream Machine 🔥🔥🔥
-                            </div>
-                        </div>
-                    </article>
-                    <article class="video_container">
-                        <div class="video_wrapper">
-                            <video
-                                muted
-                                loop
-                                id="video_4"
-                                class="video_source"
-                                onmouseover="this.play()"
-                                onmouseout="this.pause()"
-                                onclick="openInNewTab(this)"
-                            >
-                                <source src="../assets/video/no_code_ai.mp4" />
-                            </video>
-                            <div class="video_content">
-                                <a
-                                    href="../assets/video/no_code_ai.mp4"
-                                    target="_blank"
-                                    class="play_btn"
-                                    onmouseover="video_4.play()"
-                                    onmouseout="video_4.pause()"
-                                >
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_play.svg#play"
-                                        ></use>
-                                    </svg>
-                                </a>
-                                00:39
-                            </div>
-                        </div>
-                        <div class="video_description">
-                            AI Startup Website Kit - Free for Framer and Figma
-                            <div class="video_subtitle">
-                                Effortlessly build a fully functional,
-                                responsive, no-code website for AI-driven
-                                products in minutes using free Framer and Figma
-                                components.
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <div class="news_cover_content">
+              Tech Giants Unveil Cutting-Edge AI Innovations
+              <div class="news_cover_content_theme">Technology</div>
             </div>
-        </section>
-        <footer>
-            <article class="section_top_footer">
-                <div class="section_top_content">
-                    <div class="section_top_content_flex">
-                        <img
-                            src="../assets/icons/Icon_FT_blog.svg"
-                            alt="иконка"
-                        />
-                        <div class="text_top_content">
-                            <div class="top_badge">
-                                Learn, Connect, and Innovate
-                            </div>
-                            <div class="top_title">
-                                Be Part of the Future Tech Revolution
-                            </div>
-                            <p>
-                                Immerse yourself in the world of future
-                                technology. Explore our comprehensive resources,
-                                connect with fellow tech enthusiasts, and drive
-                                innovation in the industry. Join a dynamic
-                                community of forward-thinkers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <div class="footer_top">
-                <div class="container_for_footer">
-                    <div class="footer_top_flex">
-                        <div class="footer-item">
-                            <div class="footer_text_flex">
-                                Resource Access
-                                <div class="footer_circle_button">
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_arrow.svg#arrow"
-                                        ></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p>
-                                Virtual access to a wide range of resources,
-                                including guides, whitepapers, reports.
-                            </p>
-                        </div>
-                        <div class="footer-item">
-                            <div class="footer_text_flex">
-                                Community Forum
-                                <div class="footer_circle_button">
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_arrow.svg#arrow"
-                                        ></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p>
-                                Join our active community forum to discuss
-                                industry trends and collaborate with peers.
-                            </p>
-                        </div>
-                        <div class="footer-item">
-                            <div class="footer_text_flex">
-                                Tech Events
-                                <div class="footer_circle_button">
-                                    <svg>
-                                        <use
-                                            href="../assets/icons/Icon_arrow.svg#arrow"
-                                        ></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p>
-                                Stay updated on upcoming tech events, webinars
-                                and conferences to enhance your knowledge.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="small_news_cover_buttons">
+              <div class="blogpost_social_buttons">
+                <button
+                  class="favorites_btn"
+                  id="fav3"
+                  onclick="this.classList.toggle('active')"
+                >
+                  <svg class="icon">
+                    <use
+                      href="../assets/icons/Icon_favorites.svg#favorites"
+                    ></use>
+                  </svg>
+                  6k
+                </button>
+                <button class="chat_btn" role="button">
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                  </svg>
+                  20
+                </button>
+              </div>
+              <a class="read_more_btn_with_arrow" href=""
+                >Read More
+                <svg class="icon">
+                  <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
-            <div class="container_for_footer">
-                <div class="bottom-bar">
-                    <div class="block_link_page_media">
-                        <div class="nav-links">
-                            <a href="../index.html">Home</a>
-                            <a href="../pages/news.html">News</a>
-                            <a href="#">Blogs</a>
-                            <a href="#">Podcasts</a>
-                        </div>
-                        <div class="social-links">
-                            <ul class="social-media">
-                                <li>
-                                    <a
-                                        class="media-brands"
-                                        target="_blank"
-                                        href="https://twitter.com/?lang=ru"
-                                        ><i
-                                            class="fa-brands fa-twitter fa-5x"
-                                        ></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="media-brands"
-                                        href="https://microsoftedge.microsoft.com/"
-                                        target="_blank"
-                                        ><i
-                                            class="fa-brands fa-medium fa-5x"
-                                        ></i
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="media-brands"
-                                        href="https://www.linkedin.com/"
-                                        target="_blank"
-                                        ><i
-                                            class="fa-brands fa-linkedin fa-5x"
-                                        ></i
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        © 2024 FutureTech. All rights reserved.
-                    </div>
-                </div>
+          </article>
+          <article class="small_news_preview">
+            <div>
+              <div class="news_cover_small" id="news_3"></div>
             </div>
-        </footer>
-        <script>
-            function openInNewTab(videoElement) {
-                const videoSrc = videoElement
-                    .querySelector('source')
-                    .getAttribute('src')
-                window.open(videoSrc, '_blank')
-            }
+            <div class="news_cover_content">
+              COVID-19 Variants
+              <div class="news_cover_content_theme">Health</div>
+            </div>
+            <div class="small_news_cover_buttons">
+              <div class="blogpost_social_buttons">
+                <button
+                  class="favorites_btn"
+                  id="fav4"
+                  onclick="this.classList.toggle('active')"
+                >
+                  <svg class="icon">
+                    <use
+                      href="../assets/icons/Icon_favorites.svg#favorites"
+                    ></use>
+                  </svg>
+                  10k
+                </button>
+                <button class="chat_btn" role="button">
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                  </svg>
+                  124
+                </button>
+              </div>
+              <a class="read_more_btn_with_arrow" href=""
+                >Read More
+                <svg class="icon">
+                  <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="future_tech_in_depth_section">
+      <article class="section_top">
+        <div class="section_top_content">
+          <div class="text_top_content">
+            <div class="top_badge">Welcome to Our News Hub</div>
+            <div class="top_title">Discover the World of Headlines</div>
+          </div>
+          <a class="text_top_button">
+            View All News
+            <svg class="icon">
+              <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+      <article class="section">
+        <div class="tabs_content" role="tablist">
+          <!--пока все кнопки будут смотреть на tavpanel-ALL-->
+          <button
+            class="tabs_button"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="tabpanel_All"
+            name="blog_tabs"
+            id="tab_btn_all"
+          >
+            All
+          </button>
+          <button
+            class="tabs_button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tabpanel_All"
+            name="blog_tabs"
+            id="tab_btn_technology"
+          >
+            Technology
+          </button>
+          <button
+            class="tabs_button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tabpanel_All"
+            name="blog_tabs"
+            id="tab_btn_politics"
+          >
+            Politics
+          </button>
+          <button
+            class="tabs_button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tabpanel_All"
+            name="blog_tabs"
+            id="tab_btn_health"
+          >
+            Health
+          </button>
+          <button
+            class="tabs_button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tabpanel_All"
+            name="blog_tabs"
+            id="tab_btn_enviroment"
+          >
+            Environment
+          </button>
+          <button
+            class="tabs_button"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tabpanel_All"
+            name="blog_tabs"
+            id="tab_btn_sports"
+          >
+            Sports
+          </button>
+        </div>
+      </article>
+      <div id="tabpanel_All">
+        <article class="section">
+          <div class="container_for_blog">
+            <div class="blogpost_wrapper">
+              <div class="mobile-wrapper">
+                <div class="blogpost_author">
+                  <img
+                    src="../assets/img/avatarts/avatar_men_yellow_shirt.png"
+                    alt="John Techson"
+                    class="blogpost_avatar"
+                  />
+                  <div class="author_name">
+                    John Techson
+                    <div class="blogpost_theme">Quantum Computing</div>
+                  </div>
+                </div>
+                <a class="post_button" href="">
+                  View Blog
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="blogpost_preview">
+                <div class="blogpost_date">October 15, 2023</div>
+                <div class="blogpost_name">
+                  The Quantum Leap in Computing
+                  <div class="blogpost_description">
+                    Explore the revolution in quantum computing, its
+                    applications, and its potential impact on various
+                    industries.
+                  </div>
+                </div>
+                <div class="blogpost_social_buttons">
+                  <button
+                    class="favorites_btn"
+                    id="fav5"
+                    onclick="this.classList.toggle('active')"
+                  >
+                    <svg class="icon">
+                      <use
+                        href="../assets/icons/Icon_favorites.svg#favorites"
+                      ></use>
+                    </svg>
+                    24.5k
+                  </button>
+                  <button class="chat_btn" role="button">
+                    <svg class="icon">
+                      <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                    </svg>
+                    50
+                  </button>
+                  <button class="share_btn" role="button">
+                    <svg class="icon">
+                      <use href="../assets/icons/Icon_share.svg#share"></use>
+                    </svg>
+                    20
+                  </button>
+                </div>
+              </div>
+              <a class="post_button" href="">
+                View Blog
+                <svg class="icon">
+                  <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="section">
+          <div class="container_for_blog">
+            <div class="blogpost_wrapper">
+              <div class="mobile-wrapper">
+                <div class="blogpost_author">
+                  <img
+                    src="../assets/img/avatarts/avatar_women_stripes.png"
+                    alt="Sarah Ethicist"
+                    class="blogpost_avatar"
+                  />
+                  <div class="author_name">
+                    Sarah Ethicist
+                    <div class="blogpost_theme">AI Ethics</div>
+                  </div>
+                </div>
+                <a class="post_button" href="">
+                  View Blog
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="blogpost_preview">
+                <div class="blogpost_date">November 5, 2023</div>
+                <div class="blogpost_name">
+                  The Ethical Dilemmas of AI
+                  <div class="blogpost_description">
+                    A deep dive into ethical challenges posed by AI, including
+                    bias, privacy, and transparency.
+                  </div>
+                </div>
+                <div class="blogpost_social_buttons">
+                  <button
+                    class="favorites_btn"
+                    id="fav6"
+                    onclick="this.classList.toggle('active')"
+                  >
+                    <svg class="icon">
+                      <use
+                        href="../assets/icons/Icon_favorites.svg#favorites"
+                      ></use>
+                    </svg>
+                    32k
+                  </button>
+                  <button class="chat_btn" role="button">
+                    <svg class="icon">
+                      <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                    </svg>
+                    72
+                  </button>
+                  <button class="share_btn" role="button">
+                    <svg class="icon">
+                      <use href="../assets/icons/Icon_share.svg#share"></use>
+                    </svg>
+                    18
+                  </button>
+                </div>
+              </div>
+              <a class="post_button" href="">
+                View Blog
+                <svg class="icon">
+                  <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="section">
+          <div class="container_for_blog">
+            <div class="blogpost_wrapper">
+              <div class="mobile-wrapper">
+                <div class="blogpost_author">
+                  <img
+                    src="../assets/img/avatarts/avatar_men_black_shirt.png"
+                    alt="Astronomer X"
+                    class="blogpost_avatar"
+                  />
+                  <div class="author_name">
+                    Astronomer X
+                    <div class="blogpost_theme">Space Exploration</div>
+                  </div>
+                </div>
+                <a class="post_button" href="">
+                  View Blog
+                  <svg class="icon">
+                    <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="blogpost_preview">
+                <div class="blogpost_date">December 10, 2023</div>
+                <div class="blogpost_name">
+                  The Mars Colonization Challenge
+                  <div class="blogpost_description">
+                    Exploring the technical and logistical challenges of human
+                    colonization on Mars.
+                  </div>
+                </div>
+                <div class="blogpost_social_buttons">
+                  <button
+                    class="favorites_btn"
+                    id="fav7"
+                    onclick="this.classList.toggle('active')"
+                  >
+                    <svg class="icon">
+                      <use
+                        href="../assets/icons/Icon_favorites.svg#favorites"
+                      ></use>
+                    </svg>
+                    31k
+                  </button>
+                  <button class="chat_btn" role="button">
+                    <svg class="icon">
+                      <use href="../assets/icons/Icon_chat.svg#chat"></use>
+                    </svg>
+                    20
+                  </button>
+                  <button class="share_btn" role="button">
+                    <svg class="icon">
+                      <use href="../assets/icons/Icon_share.svg#share"></use>
+                    </svg>
+                    12
+                  </button>
+                </div>
+              </div>
+              <a class="post_button" href="">
+                View Blog
+                <svg class="icon">
+                  <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="featured_videos">
+      <article class="section_top">
+        <div class="section_top_content">
+          <div class="text_top_content">
+            <div class="top_badge">Featured Videos</div>
+            <div class="top_title">Visual Insights for the Modern Viewer</div>
+          </div>
+          <a class="text_top_button">
+            View All
+            <svg class="icon">
+              <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+      <div class="video_row_wrapper">
+        <div class="video_row_container">
+          <article class="video_container">
+            <div class="video_wrapper">
+              <video
+                muted
+                loop
+                id="video_1"
+                class="video_source"
+                onmouseover="this.play()"
+                onmouseout="this.pause()"
+                onclick="openInNewTab(this)"
+              >
+                <source src="../assets/video/clip_made_with_ai.mp4" />
+              </video>
+              <div class="video_content">
+                <a
+                  href="../assets/video/clip_made_with_ai.mp4"
+                  target="_blank"
+                  class="play_btn"
+                  onmouseover="video_1.play()"
+                  onmouseout="video_1.pause()"
+                >
+                  <svg>
+                    <use href="../assets/icons/Icon_play.svg#play"></use>
+                  </svg>
+                </a>
+                00:37
+              </div>
+            </div>
+            <div class="video_description">
+              AI Evolution - Created Only by Generative AI
+              <div class="video_subtitle">
+                Used only AI tools to make this music video. None of the people
+                are real. This video is unofficial☝️
+              </div>
+            </div>
+          </article>
+          <article class="video_container">
+            <div class="video_wrapper">
+              <video
+                muted
+                loop
+                id="video_2"
+                class="video_source"
+                onmouseover="this.play()"
+                onmouseout="this.pause()"
+                onclick="openInNewTab(this)"
+              >
+                <source src="../assets/video/gen-3_ai.mp4" />
+              </video>
+              <div class="video_content">
+                <a
+                  href="../assets/video/gen-3_ai.mp4"
+                  target="_blank"
+                  class="play_btn"
+                  onmouseover="video_2.play()"
+                  onmouseout="video_2.pause()"
+                >
+                  <svg>
+                    <use href="../assets/icons/Icon_play.svg#play"></use>
+                  </svg>
+                </a>
+                01:21
+              </div>
+            </div>
+            <div class="video_description">
+              Introducing Act-One | Runway
+              <div class="video_subtitle">
+                Introducing, Act-One. A new way to generate expressive character
+                performances inside Gen-3 Alpha using a single driving video and
+                character image. No motion capture or rigging required.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="video_row_wrapper">
+        <div class="video_row_container">
+          <article class="video_container">
+            <div class="video_wrapper">
+              <video
+                muted
+                loop
+                id="video_3"
+                class="video_source"
+                onmouseover="this.play()"
+                onmouseout="this.pause()"
+                onclick="openInNewTab(this)"
+              >
+                <source src="../assets/video/Luma_ai.mp4" />
+              </video>
+              <div class="video_content">
+                <a
+                  href="../assets/video/Luma_ai.mp4"
+                  target="_blank"
+                  class="play_btn"
+                  onmouseover="video_3.play()"
+                  onmouseout="video_3.pause()"
+                >
+                  <svg>
+                    <use href="../assets/icons/Icon_play.svg#play"></use>
+                  </svg>
+                </a>
+                01:18
+              </div>
+            </div>
+            <div class="video_description">
+              Luma AI Dream Machine
+              <div class="video_subtitle">
+                Forget Kling and Sora, there is a new kid on the block Luma Labs
+                AI Dream Machine 🔥🔥🔥
+              </div>
+            </div>
+          </article>
+          <article class="video_container">
+            <div class="video_wrapper">
+              <video
+                muted
+                loop
+                id="video_4"
+                class="video_source"
+                onmouseover="this.play()"
+                onmouseout="this.pause()"
+                onclick="openInNewTab(this)"
+              >
+                <source src="../assets/video/no_code_ai.mp4" />
+              </video>
+              <div class="video_content">
+                <a
+                  href="../assets/video/no_code_ai.mp4"
+                  target="_blank"
+                  class="play_btn"
+                  onmouseover="video_4.play()"
+                  onmouseout="video_4.pause()"
+                >
+                  <svg>
+                    <use href="../assets/icons/Icon_play.svg#play"></use>
+                  </svg>
+                </a>
+                00:39
+              </div>
+            </div>
+            <div class="video_description">
+              AI Startup Website Kit - Free for Framer and Figma
+              <div class="video_subtitle">
+                Effortlessly build a fully functional, responsive, no-code
+                website for AI-driven products in minutes using free Framer and
+                Figma components.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <article class="section_top_footer">
+        <div class="section_top_content">
+          <div class="section_top_content_flex">
+            <img src="../assets/icons/Logo.svg" alt="иконка" />
+            <div class="text_top_content">
+              <div class="top_badge">Learn, Connect, and Innovate</div>
+              <div class="top_title">Be Part of the Future Tech Revolution</div>
+              <p>
+                Immerse yourself in the world of future technology. Explore our
+                comprehensive resources, connect with fellow tech enthusiasts,
+                and drive innovation in the industry. Join a dynamic community
+                of forward-thinkers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="footer_top">
+        <div class="container_for_footer">
+          <div class="footer_top_flex">
+            <div class="footer-item">
+              <div class="footer_text_flex">
+                Resource Access
+                <div class="footer_circle_button">
+                  <svg>
+                    <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <p>
+                Virtual access to a wide range of resources, including guides,
+                whitepapers, reports.
+              </p>
+            </div>
+            <div class="footer-item">
+              <div class="footer_text_flex">
+                Community Forum
+                <div class="footer_circle_button">
+                  <svg>
+                    <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <p>
+                Join our active community forum to discuss industry trends and
+                collaborate with peers.
+              </p>
+            </div>
+            <div class="footer-item">
+              <div class="footer_text_flex">
+                Tech Events
+                <div class="footer_circle_button">
+                  <svg>
+                    <use href="../assets/icons/Icon_arrow.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <p>
+                Stay updated on upcoming tech events, webinars and conferences
+                to enhance your knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_for_footer">
+        <div class="bottom-bar">
+          <div class="block_link_page_media">
+            <div class="nav-links">
+              <a href="../index.html">Home</a>
+              <a href="../pages/news.html">News</a>
+              <a href="#">Blogs</a>
+              <a href="#">Podcasts</a>
+            </div>
+            <div class="social-links">
+              <ul class="social-media">
+                <li>
+                  <a
+                    class="media-brands"
+                    target="_blank"
+                    href="https://twitter.com/?lang=ru"
+                    ><i class="fa-brands fa-twitter fa-5x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="media-brands"
+                    href="https://microsoftedge.microsoft.com/"
+                    target="_blank"
+                    ><i class="fa-brands fa-medium fa-5x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="media-brands"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin fa-5x"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">© 2024 FutureTech. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function openInNewTab(videoElement) {
+        const videoSrc = videoElement
+          .querySelector("source")
+          .getAttribute("src");
+        window.open(videoSrc, "_blank");
+      }
 
-            // Получаем элементы
-            const mobileMenuButton = document.querySelector('.mobile_menu')
-            const mobileCloseButton = document.querySelector('.close_button')
-            const mobileNavbar = document.querySelector('.mobile_navbar')
+      // Получаем элементы
+      const mobileMenuButton = document.querySelector(".mobile_menu");
+      const mobileCloseButton = document.querySelector(".close_button");
+      const mobileNavbar = document.querySelector(".mobile_navbar");
 
-            // Функция для открытия меню с проверкой ширины экрана
-            function openMenu() {
-                if (window.innerWidth <= 640) {
-                    mobileNavbar.style.display = 'flex'
-                    document.documentElement.style.overflow = 'hidden'
-                }
-            }
+      // Функция для открытия меню с проверкой ширины экрана
+      function openMenu() {
+        if (window.innerWidth <= 640) {
+          mobileNavbar.style.display = "flex";
+          document.documentElement.style.overflow = "hidden";
+        }
+      }
 
-            // Функция для закрытия меню
-            function closeMenu() {
-                mobileNavbar.style.display = 'none'
-                document.documentElement.style.overflow = ''
-            }
+      // Функция для закрытия меню
+      function closeMenu() {
+        mobileNavbar.style.display = "none";
+        document.documentElement.style.overflow = "";
+      }
 
-            // Обработчик клика для кнопки открытия меню
-            mobileMenuButton.addEventListener('click', openMenu)
+      // Обработчик клика для кнопки открытия меню
+      mobileMenuButton.addEventListener("click", openMenu);
 
-            // Обработчик клика для кнопки закрытия меню
-            mobileCloseButton.addEventListener('click', closeMenu)
-        </script>
-    </body>
+      // Обработчик клика для кнопки закрытия меню
+      mobileCloseButton.addEventListener("click", closeMenu);
+    </script>
+  </body>
 </html>
