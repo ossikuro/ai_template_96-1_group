@@ -1081,10 +1081,12 @@
             const mobileCloseButton = document.querySelector('.close_button')
             const mobileNavbar = document.querySelector('.mobile_navbar')
 
-            // Функция для открытия меню
+            // Функция для открытия меню с проверкой ширины экрана
             function openMenu() {
-                mobileNavbar.style.display = 'flex'
-                document.documentElement.style.overflow = 'hidden'
+                if (window.innerWidth <= 640) {
+                    mobileNavbar.style.display = 'flex'
+                    document.documentElement.style.overflow = 'hidden'
+                }
             }
 
             // Функция для закрытия меню

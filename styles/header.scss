@@ -61,6 +61,10 @@
     @include btn_white;
 }
 
+.mobile_navbar {
+    display: none;
+}
+
 @media (max-width: 640px) {
     .nav_bar_menu > .buttons_container,
     .nav_bar_menu > .contacts_button {
